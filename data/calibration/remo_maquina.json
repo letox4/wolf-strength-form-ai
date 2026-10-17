@@ -1,0 +1,14 @@
+{
+  "exercise_id": "remo_maquina",
+  "label": "Remo en máquina",
+  "source_video": "VID-20260623-WA0005.mp4",
+  "reps_detected": 0,
+  "note": "Fallback hasta recalibrar con GPU",
+  "metrics": {
+    "elbow": { "min": 50, "max": 170, "p10": 65, "p50": 88, "p90": 165 },
+    "bottom_rep": { "p10": 58, "p50": 75, "p90": 92 },
+    "top_rep": { "p10": 150, "p50": 162, "p90": 170 },
+    "torso": { "p10": 10, "p50": 22, "p90": 35 }
+  },
+  "rep_thresholds": { "enter_down": 122, "exit_up": 142 }
+}

@@ -1,0 +1,14 @@
+{
+  "exercise_id": "fondos",
+  "label": "Fondos en paralelas",
+  "source_video": "VID-20260623-WA0004.mp4",
+  "reps_detected": 0,
+  "note": "Fallback hasta recalibrar con GPU",
+  "metrics": {
+    "elbow": { "min": 75, "max": 178, "p10": 85, "p50": 100, "p90": 172 },
+    "bottom_rep": { "p10": 78, "p50": 92, "p90": 108 },
+    "top_rep": { "p10": 158, "p50": 170, "p90": 178 },
+    "torso": { "p10": 8, "p50": 18, "p90": 32 }
+  },
+  "rep_thresholds": { "enter_down": 118, "exit_up": 148 }
+}

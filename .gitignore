@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+env/
+
+# Modelos YOLO (Ultralytics los descarga solo en el primer arranque)
+*.pt
+
+# Logs
+*.log
+
+# Datos personales / pesados (videos de entrenamiento y frames)
+EntrenamientoVideos/
+data/videos/
+data/video_preview/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store

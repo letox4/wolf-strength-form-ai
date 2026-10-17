@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Wolf Strength · Análisis IA (beta)</title>
+  <link rel="icon" href="/static/logo.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="/static/logo.jpg" alt="" class="logo">
+      <div class="wordmark">
+        <h1>WOLF <span>STRENGTH</span></h1>
+        <p>FORM AI · ANÁLISIS EN VIVO</p>
+      </div>
+    </div>
+    <a href="/" id="backGuideLink" style="color:#8b8e98;font-size:13px;margin-right:12px">← Guía 3D</a>
+    <div id="conn" class="badge off">OFFLINE</div>
+  </header>
+  <div id="guideBanner" class="guide-banner hidden">
+    <div>
+      <strong id="guideBannerTitle">Desde biblioteca 3D</strong>
+      <p id="guideBannerText"></p>
+      <p id="guideWatchMetrics" class="guide-metrics"></p>
+    </div>
+    <a id="guidePhaseLink" href="/" class="guide-phase-link">Ver fase en 3D</a>
+  </div>
+  <main>
+    <div id="stage" class="video-wrap">
+      <video id="video" playsinline autoplay muted></video>
+      <canvas id="overlay"></canvas>
+      <div id="hud">
+        <div class="hud-top">
+          <div class="metric big"><span id="reps">0</span><label>REPS</label></div>
+          <div class="metric"><span id="stageVal">—</span><label>FASE</label></div>
+          <div id="status" class="status ok">LISTO</div>
+        </div>
+        <div id="angles" class="angles"></div>
+        <div id="gauge" class="gauge"><div class="gauge-track"><div id="gaugeFill" class="gauge-fill"></div></div><span id="gaugeLabel" class="gauge-label"></span></div>
+        <div id="liveCue" class="live-cue"></div>
+        <div id="setupHint" class="setup-hint hidden"></div>
+        <div id="messages" class="messages"></div>
+        <div id="fps" class="fps"></div>
+      </div>
+      <div id="startOverlay" class="start-overlay">
+        <p>Pulsa <b>INICIAR</b> y permite la cámara</p>
+      </div>
+    </div>
+  </main>
+  <footer class="controls">
+    <select id="exerciseSel"></select>
+    <button id="startBtn" class="primary">INICIAR</button>
+    <button id="reportBtn" type="button">INFORME</button>
+    <button id="resetBtn">RESET</button>
+    <button id="flipBtn">VOLTEAR</button>
+    <button id="voiceBtn" class="toggle on">VOZ</button>
+  </footer>
+  <div id="reportModal" class="report-modal hidden" role="dialog" aria-labelledby="reportTitle">
+    <div class="report-sheet">
+      <div class="report-head">
+        <h2 id="reportTitle">Informe de sesión</h2>
+        <button type="button" id="reportClose" aria-label="Cerrar">✕</button>
+      </div>
+      <div id="reportBody" class="report-body"></div>
+      <a id="reportGuideLink" href="/" class="report-guide-link">Volver a la fase en biblioteca 3D →</a>
+    </div>
+  </div>
+  <script src="/static/app.js?v=4"></script>
+</body>
+</html>

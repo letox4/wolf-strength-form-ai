@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bake mannequin poses</title>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/",
+      "mannequin": "/static/vendor/mannequin-js/mannequin.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <p id="status">Horneando poses…</p>
+  <script type="module">
+    import { bindStage } from '/static/vendor/mannequin-js/scene.js';
+    import { Male } from 'mannequin';
+    import * as THREE from 'three';
+    import {
+      POSE_ENGINE_VER,
+      applyMannequinPose,
+      gripModeForProps,
+    } from './js/native-poses.js?v=75';
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 50);
+    const renderer = new THREE.WebGLRenderer();
+    bindStage({ renderer, scene, camera });
+
+    const fig = new Male(1.78);
+    const guide = await fetch('/api/guide').then((r) => r.json());
+    const baked = {};
+
+    for (const [poseId, poseDef] of Object.entries(guide.poses)) {
+      const props = poseDef.props ? Object.keys(poseDef.props) : [];
+      const grip = gripModeForProps(props);
+      const posture = applyMannequinPose(fig, poseId, guide.poses, grip);
+      baked[poseId] = {
+        mannequin: posture,
+        _engineVer: POSE_ENGINE_VER,
+      };
+    }
+
+    window.__BAKED_POSES__ = baked;
+    document.getElementById('status').textContent = `Listo: ${Object.keys(baked).length} poses`;
+
+    await fetch('/api/bake-poses', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(baked),
+    }).then((r) => r.json()).then((j) => {
+      document.getElementById('status').textContent = j.message || 'Guardado';
+    }).catch(() => {
+      const blob = new Blob([JSON.stringify(baked, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'mannequin_poses.json';
+      a.click();
+      document.getElementById('status').textContent = 'Descarga manual (servidor sin endpoint)';
+    });
+  </script>
+</body>
+</html>

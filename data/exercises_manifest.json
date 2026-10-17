@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "videos": [
+    {
+      "file": "VID-20260623-WA0002.mp4",
+      "exercise_id": "jalon",
+      "label": "Jalón al pecho",
+      "primary_metric": "elbow",
+      "rep_mode": "pull_down"
+    },
+    {
+      "file": "VID-20260623-WA0004.mp4",
+      "exercise_id": "fondos",
+      "label": "Fondos en paralelas",
+      "primary_metric": "elbow",
+      "rep_mode": "push_up_pattern"
+    },
+    {
+      "file": "VID-20260623-WA0005.mp4",
+      "exercise_id": "remo_maquina",
+      "label": "Remo en máquina",
+      "primary_metric": "elbow",
+      "rep_mode": "pull_back"
+    },
+    {
+      "file": "VID-20260623-WA0006.mp4",
+      "exercise_id": "peso_muerto",
+      "label": "Peso muerto",
+      "primary_metric": "back",
+      "rep_mode": "hinge"
+    },
+    {
+      "file": "VID-20260623-WA0007.mp4",
+      "exercise_id": "press_smith",
+      "label": "Press inclinado Smith",
+      "primary_metric": "elbow",
+      "rep_mode": "push_up_pattern"
+    }
+  ],
+  "bodyweight": ["sentadilla", "curl", "flexion"]
+}

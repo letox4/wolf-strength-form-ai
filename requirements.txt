@@ -1,0 +1,13 @@
+# Núcleo: detección de pose
+ultralytics>=8.3.0      # YOLO11 / YOLOv8 Pose
+opencv-python>=4.9.0    # captura de video y dibujo
+numpy>=1.24
+pyyaml>=6.0
+
+# Interfaz web + tunel
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pyngrok>=7.1          # tunel ngrok desde Python
+
+# PyTorch con CUDA para la RTX 3060 (instalar APARTE, ver README):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121

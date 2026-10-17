@@ -1,0 +1,16 @@
+{
+  "exercise_id": "jalon",
+  "label": "Jalón al pecho",
+  "source_video": "VID-20260623-WA0002.mp4",
+  "frames_sampled": 0,
+  "frames_with_pose": 0,
+  "reps_detected": 0,
+  "note": "Fallback hasta recalibrar con GPU",
+  "metrics": {
+    "elbow": { "min": 55, "max": 175, "p10": 68, "p50": 95, "p90": 168 },
+    "bottom_rep": { "p10": 62, "p50": 78, "p90": 95 },
+    "top_rep": { "p10": 155, "p50": 168, "p90": 175 },
+    "torso": { "p10": 5, "p50": 15, "p90": 28 }
+  },
+  "rep_thresholds": { "enter_down": 125, "exit_up": 145 }
+}

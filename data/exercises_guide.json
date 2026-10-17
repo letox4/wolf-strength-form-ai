@@ -1,0 +1,11505 @@
+{
+  "version": 4,
+  "app": "Wolf Strength — Biblioteca 3D",
+  "angles": [
+    {
+      "id": "front",
+      "label": "Frontal",
+      "hint": "Vista de frente"
+    },
+    {
+      "id": "side",
+      "label": "Lateral",
+      "hint": "Vista lateral (recomendada)"
+    },
+    {
+      "id": "three_quarter",
+      "label": "3/4",
+      "hint": "Vista diagonal"
+    },
+    {
+      "id": "top",
+      "label": "Cenital",
+      "hint": "Vista desde arriba"
+    }
+  ],
+  "categories": [
+    {
+      "id": "piernas",
+      "label": "Piernas"
+    },
+    {
+      "id": "peso_muerto",
+      "label": "Peso muerto"
+    },
+    {
+      "id": "pecho",
+      "label": "Pecho"
+    },
+    {
+      "id": "espalda",
+      "label": "Espalda"
+    },
+    {
+      "id": "hombros",
+      "label": "Hombros"
+    },
+    {
+      "id": "biceps",
+      "label": "Bíceps"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "sentadilla",
+      "name": "Sentadilla",
+      "category": "piernas",
+      "equipment": "Barra o peso corporal",
+      "summary": "Cadera atrás, rodillas alineadas con pies, profundidad controlada.",
+      "default_angle": "side",
+      "props": [],
+      "muscles": [
+        "Cuádriceps",
+        "Glúteos",
+        "Core"
+      ],
+      "cautions": [
+        "Talones en el suelo",
+        "Rodillas en línea con pies"
+      ],
+      "mistakes": [
+        "Rodillas hacia dentro",
+        "Perder neutralidad lumbar",
+        "Poca profundidad"
+      ],
+      "tips": [
+        "Pecho arriba",
+        "Empujar el suelo",
+        "Paralelo o más abajo"
+      ],
+      "steps": [
+        {
+          "title": "1. Arriba",
+          "text": "Pies ancho de hombros, core activo, mirada al frente.",
+          "camera": "side",
+          "pose": "squat_top",
+          "angles": [
+            {
+              "label": "Rodilla",
+              "range": "170–180°",
+              "note": "De pie"
+            }
+          ]
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Cadera atrás y abajo. Rodillas siguen los pies.",
+          "camera": "three_quarter",
+          "pose": "squat_bottom",
+          "angles": [
+            {
+              "label": "Rodilla",
+              "range": "80–95°",
+              "note": "Flexión controlada"
+            },
+            {
+              "label": "Cadera",
+              "range": "Atrás",
+              "note": "Bisagra"
+            }
+          ]
+        },
+        {
+          "title": "3. Subida",
+          "text": "Empuja con todo el pie sin dejar colapsar rodillas.",
+          "camera": "side",
+          "pose": "squat_top"
+        }
+      ]
+    },
+    {
+      "id": "bulgara",
+      "name": "Sentadilla búlgara",
+      "category": "piernas",
+      "equipment": "Banco + mancuernas o barra",
+      "summary": "Un pie atrás en banco, baja la rodilla trasera hacia el suelo.",
+      "default_angle": "side",
+      "props": [
+        "bench_flat"
+      ],
+      "muscles": [
+        "Cuádriceps",
+        "Glúteos"
+      ],
+      "cautions": [
+        "Torso erguido",
+        "Rodilla delantera no pase mucho la punta del pie"
+      ],
+      "mistakes": [
+        "Inclinarse demasiado",
+        "Rodilla delantera colapsando"
+      ],
+      "tips": [
+        "Peso en pierna delantera",
+        "Core activo",
+        "Rango completo"
+      ],
+      "steps": [
+        {
+          "title": "1. Posición",
+          "text": "Pie trasero en banco, pie delantero adelante. Torso vertical.",
+          "camera": "side",
+          "pose": "bulgarian_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Baja hasta muslo paralelo o rodilla trasera cerca del suelo.",
+          "camera": "side",
+          "pose": "bulgarian_bottom",
+          "angles": [
+            {
+              "label": "Rodilla",
+              "range": "80–95°",
+              "note": "Flexión controlada"
+            }
+          ]
+        },
+        {
+          "title": "3. Subida",
+          "text": "Empuja con el talón delantero.",
+          "camera": "side",
+          "pose": "bulgarian_top"
+        }
+      ]
+    },
+    {
+      "id": "hack_squat",
+      "name": "Hack squat",
+      "category": "piernas",
+      "equipment": "Máquina hack",
+      "summary": "Espalda en el respaldo, pies en la plataforma, baja controlado.",
+      "default_angle": "side",
+      "props": [
+        "hack_squat"
+      ],
+      "muscles": [
+        "Cuádriceps",
+        "Glúteos"
+      ],
+      "cautions": [
+        "Lumbar pegada al respaldo",
+        "No bloquear rodillas de golpe"
+      ],
+      "mistakes": [
+        "Despegar espalda del respaldo",
+        "Pies muy juntos sin control"
+      ],
+      "tips": [
+        "Pies al ancho de hombros",
+        "Bajada 2–3 s",
+        "Empuje con piernas"
+      ],
+      "steps": [
+        {
+          "title": "1. Arriba",
+          "text": "Espalda y hombros en el respaldo. Piernas casi extendidas.",
+          "camera": "side",
+          "pose": "hack_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Flexiona rodillas sin perder contacto lumbar.",
+          "camera": "side",
+          "pose": "hack_bottom",
+          "angles": [
+            {
+              "label": "Rodilla",
+              "range": "80–95°",
+              "note": "Flexión controlada"
+            }
+          ]
+        },
+        {
+          "title": "3. Empuje",
+          "text": "Extiende sin hiperextender.",
+          "camera": "side",
+          "pose": "hack_top"
+        }
+      ]
+    },
+    {
+      "id": "estocadas",
+      "name": "Estocadas",
+      "category": "piernas",
+      "equipment": "Mancuernas o barra",
+      "summary": "Paso largo adelante, baja la rodilla trasera hacia el suelo.",
+      "default_angle": "side",
+      "props": [],
+      "muscles": [
+        "Cuádriceps",
+        "Glúteos",
+        "Isquios"
+      ],
+      "cautions": [
+        "Torso erguido",
+        "Rodilla delantera estable"
+      ],
+      "mistakes": [
+        "Paso demasiado corto",
+        "Inclinarse excesivamente"
+      ],
+      "tips": [
+        "90° en ambas rodillas",
+        "Empujar con pierna delantera",
+        "Alternar piernas"
+      ],
+      "steps": [
+        {
+          "title": "1. Inicio",
+          "text": "De pie, paso largo hacia delante.",
+          "camera": "side",
+          "pose": "lunge_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Baja verticalmente. Rodilla trasera hacia el suelo.",
+          "camera": "side",
+          "pose": "lunge_down",
+          "angles": [
+            {
+              "label": "Rodilla",
+              "range": "80–95°",
+              "note": "Flexión controlada"
+            }
+          ]
+        },
+        {
+          "title": "3. Subida",
+          "text": "Empuja con el talón delantero para volver.",
+          "camera": "side",
+          "pose": "lunge_top"
+        }
+      ]
+    },
+    {
+      "id": "peso_muerto_conv",
+      "name": "Peso muerto convencional",
+      "category": "peso_muerto",
+      "equipment": "Barra olímpica",
+      "summary": "Tirón desde el suelo con espalda neutra y barra pegada.",
+      "default_angle": "side",
+      "props": [
+        "barbell"
+      ],
+      "muscles": [
+        "Erectores",
+        "Glúteos",
+        "Isquios"
+      ],
+      "cautions": [
+        "Espalda neutra",
+        "Barra cerca del cuerpo",
+        "No hiperextender arriba"
+      ],
+      "mistakes": [
+        "Espalda redondeada",
+        "Barra lejos de piernas",
+        "Tirar solo de espalda"
+      ],
+      "tips": [
+        "Pies bajo la barra",
+        "Empujar el suelo",
+        "Bloquear cadera arriba"
+      ],
+      "steps": [
+        {
+          "title": "1. Setup",
+          "text": "Pies al ancho de caderas, agarre fuera de piernas, pecho arriba.",
+          "camera": "side",
+          "pose": "dl_setup",
+          "angles": [
+            {
+              "label": "Cadera",
+              "range": "45–55°",
+              "note": "Bisagra"
+            },
+            {
+              "label": "Espalda",
+              "range": "Neutra",
+              "note": "Sin redondear"
+            }
+          ]
+        },
+        {
+          "title": "2. Subida",
+          "text": "Empuja suelo, barra rozando muslos.",
+          "camera": "side",
+          "pose": "dl_top",
+          "angles": [
+            {
+              "label": "Cadera",
+              "range": "0°",
+              "note": "Extensión completa"
+            }
+          ]
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Cadera atrás primero, barra pegada.",
+          "camera": "three_quarter",
+          "pose": "dl_setup"
+        }
+      ]
+    },
+    {
+      "id": "peso_muerto_rumano",
+      "name": "Peso muerto rumano",
+      "category": "peso_muerto",
+      "equipment": "Barra o mancuernas",
+      "summary": "Bisagra de cadera con rodillas semiflexionadas, estira isquios.",
+      "default_angle": "side",
+      "props": [
+        "barbell"
+      ],
+      "muscles": [
+        "Isquios",
+        "Glúteos",
+        "Erectores"
+      ],
+      "cautions": [
+        "Espalda neutra",
+        "Barra cerca de muslos",
+        "No hiperextender lumbar"
+      ],
+      "mistakes": [
+        "Flexionar demasiado rodillas",
+        "Redondear espalda",
+        "Bajar sin control"
+      ],
+      "tips": [
+        "Cadera atrás",
+        "Sentir estiramiento en isquios",
+        "Subir apretando glúteos"
+      ],
+      "steps": [
+        {
+          "title": "1. Arriba",
+          "text": "De pie, barra a la altura de caderas.",
+          "camera": "side",
+          "pose": "rdl_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Cadera atrás, barra rozando piernas, rodillas semiflexionadas.",
+          "camera": "side",
+          "pose": "rdl_bottom",
+          "angles": [
+            {
+              "label": "Cadera",
+              "range": "45–55°",
+              "note": "Bisagra profunda"
+            },
+            {
+              "label": "Espalda",
+              "range": "Neutra",
+              "note": "Sin redondear"
+            }
+          ]
+        },
+        {
+          "title": "3. Subida",
+          "text": "Extiende cadera apretando glúteos.",
+          "camera": "side",
+          "pose": "rdl_top"
+        }
+      ]
+    },
+    {
+      "id": "peso_muerto_mancuernas",
+      "name": "Peso muerto con mancuernas",
+      "category": "peso_muerto",
+      "equipment": "Mancuernas",
+      "summary": "Misma mecánica que convencional con mancuernas a los lados.",
+      "default_angle": "side",
+      "props": [
+        "dumbbells"
+      ],
+      "muscles": [
+        "Glúteos",
+        "Isquios",
+        "Erectores"
+      ],
+      "cautions": [
+        "Espalda neutra",
+        "Mancuernas cerca del cuerpo"
+      ],
+      "mistakes": [
+        "Separar mancuernas del cuerpo",
+        "Redondear lumbar"
+      ],
+      "tips": [
+        "Pecho arriba",
+        "Empujar el suelo",
+        "Control en la bajada"
+      ],
+      "steps": [
+        {
+          "title": "1. Setup",
+          "text": "Mancuernas a los lados, pies al ancho de caderas.",
+          "camera": "side",
+          "pose": "db_dl_setup",
+          "angles": [
+            {
+              "label": "Espalda",
+              "range": "Neutra",
+              "note": "Sin redondear"
+            }
+          ]
+        },
+        {
+          "title": "2. Subida",
+          "text": "Extiende cadera y rodillas juntas.",
+          "camera": "side",
+          "pose": "db_dl_top"
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Cadera atrás, mancuernas pegadas.",
+          "camera": "side",
+          "pose": "db_dl_setup"
+        }
+      ]
+    },
+    {
+      "id": "peso_muerto_hex",
+      "name": "Peso muerto con barra hexagonal",
+      "category": "peso_muerto",
+      "equipment": "Barra hexagonal",
+      "summary": "Agarre neutro lateral, menos estrés lumbar que convencional.",
+      "default_angle": "side",
+      "props": [
+        "trap_bar"
+      ],
+      "muscles": [
+        "Glúteos",
+        "Cuádriceps",
+        "Erectores"
+      ],
+      "cautions": [
+        "Espalda neutra",
+        "Centro de masa alineado"
+      ],
+      "mistakes": [
+        "Encorvarse",
+        "Tirar con brazos"
+      ],
+      "tips": [
+        "Agarre firme",
+        "Empuje de piernas",
+        "Torso más vertical"
+      ],
+      "steps": [
+        {
+          "title": "1. Setup",
+          "text": "Dentro de la barra hex, agarre neutro, pecho arriba.",
+          "camera": "side",
+          "pose": "trap_setup",
+          "angles": [
+            {
+              "label": "Espalda",
+              "range": "Neutra",
+              "note": "Sin redondear"
+            }
+          ]
+        },
+        {
+          "title": "2. Subida",
+          "text": "Empuja el suelo, extiende cadera.",
+          "camera": "side",
+          "pose": "trap_top"
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Cadera atrás controlando.",
+          "camera": "side",
+          "pose": "trap_setup"
+        }
+      ]
+    },
+    {
+      "id": "camilla_femoral",
+      "name": "Camilla femoral",
+      "category": "piernas",
+      "equipment": "Máquina de curl femoral",
+      "summary": "Boca abajo, flexiona rodillas llevando talones al glúteo.",
+      "default_angle": "side",
+      "props": [
+        "leg_curl"
+      ],
+      "muscles": [
+        "Isquios"
+      ],
+      "cautions": [
+        "Cadera pegada al banco",
+        "Movimiento solo de rodilla"
+      ],
+      "mistakes": [
+        "Elevar cadera",
+        "Impulso con lumbar",
+        "Rango parcial"
+      ],
+      "tips": [
+        "Cadera quieta",
+        "Contracción arriba 1 s",
+        "Bajada lenta"
+      ],
+      "steps": [
+        {
+          "title": "1. Inicio",
+          "text": "Boca abajo, rodillas al borde, tobillos bajo el rodillo.",
+          "camera": "side",
+          "pose": "leg_curl_start",
+          "angles": [
+            {
+              "label": "Rodilla",
+              "range": "170°",
+              "note": "Piernas extendidas"
+            }
+          ]
+        },
+        {
+          "title": "2. Contracción",
+          "text": "Flexiona llevando talones al glúteo.",
+          "camera": "side",
+          "pose": "leg_curl_contract",
+          "angles": [
+            {
+              "label": "Rodilla",
+              "range": "35–50°",
+              "note": "Máxima flexión"
+            }
+          ]
+        },
+        {
+          "title": "3. Extensión",
+          "text": "Baja controlando 2–3 s.",
+          "camera": "side",
+          "pose": "leg_curl_start"
+        }
+      ]
+    },
+    {
+      "id": "press_plano_mancuernas",
+      "name": "Press plano con mancuernas",
+      "category": "pecho",
+      "equipment": "Banco plano + mancuernas",
+      "summary": "Press horizontal con mayor rango que barra.",
+      "default_angle": "side",
+      "props": [
+        "bench_flat",
+        "dumbbells"
+      ],
+      "muscles": [
+        "Pectoral",
+        "Tríceps",
+        "Deltoides"
+      ],
+      "cautions": [
+        "Omóplatos retraídos",
+        "Pies firmes en el suelo"
+      ],
+      "mistakes": [
+        "Codos a 90° pegados",
+        "Rebotar en el pecho",
+        "Perder retracción"
+      ],
+      "tips": [
+        "Codos a 45°",
+        "Control en bajada",
+        "Empuje vertical"
+      ],
+      "steps": [
+        {
+          "title": "1. Arriba",
+          "text": "Mancuernas sobre pecho, omóplatos atrás.",
+          "camera": "three_quarter",
+          "pose": "db_press_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Baja hasta codos a 90° aprox.",
+          "camera": "side",
+          "pose": "db_press_bottom",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Empuje",
+          "text": "Empuja sin perder estabilidad escapular.",
+          "camera": "side",
+          "pose": "db_press_top"
+        }
+      ]
+    },
+    {
+      "id": "press_inclinado_mancuernas",
+      "name": "Press inclinado con mancuernas",
+      "category": "pecho",
+      "equipment": "Banco inclinado + mancuernas",
+      "summary": "Enfatiza pectoral superior.",
+      "default_angle": "side",
+      "props": [
+        "bench_incline",
+        "dumbbells"
+      ],
+      "muscles": [
+        "Pectoral superior",
+        "Deltoides",
+        "Tríceps"
+      ],
+      "cautions": [
+        "Glúteos en el banco",
+        "Muñecas neutras"
+      ],
+      "mistakes": [
+        "Ángulo excesivo del banco",
+        "Abrir demasiado codos"
+      ],
+      "tips": [
+        "Inclinación 30–45°",
+        "Barra/mancuernas al pecho alto",
+        "Sin rebote"
+      ],
+      "steps": [
+        {
+          "title": "1. Arriba",
+          "text": "Banco inclinado, mancuernas sobre pecho alto.",
+          "camera": "side",
+          "pose": "incline_press_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Baja 2–3 s al pecho alto.",
+          "camera": "side",
+          "pose": "incline_press_bottom",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Empuje",
+          "text": "Empuja en línea con antebrazos.",
+          "camera": "side",
+          "pose": "incline_press_top"
+        }
+      ]
+    },
+    {
+      "id": "press_plano_barra",
+      "name": "Press plano con barra",
+      "category": "pecho",
+      "equipment": "Banco plano + barra",
+      "summary": "Press clásico de banca plana.",
+      "default_angle": "side",
+      "props": [
+        "bench_flat",
+        "barbell_bench"
+      ],
+      "muscles": [
+        "Pectoral",
+        "Tríceps",
+        "Deltoides"
+      ],
+      "cautions": [
+        "Retraer omóplatos",
+        "Arco lumbar natural"
+      ],
+      "mistakes": [
+        "Rebotar la barra",
+        "Codos abiertos a 90°"
+      ],
+      "tips": [
+        "Agarre ancho de hombros+",
+        "Pies firmes",
+        "Control excéntrico"
+      ],
+      "steps": [
+        {
+          "title": "1. Arriba",
+          "text": "Barra extendida sobre pecho.",
+          "camera": "side",
+          "pose": "bench_press_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Lleva la barra al pecho medio.",
+          "camera": "side",
+          "pose": "bench_press_bottom",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Empuje",
+          "text": "Empuja sin perder posición escapular.",
+          "camera": "side",
+          "pose": "bench_press_top"
+        }
+      ]
+    },
+    {
+      "id": "press_inclinado_barra",
+      "name": "Press inclinado con barra",
+      "category": "pecho",
+      "equipment": "Banco inclinado + barra",
+      "summary": "Press inclinado para pectoral superior.",
+      "default_angle": "side",
+      "props": [
+        "bench_incline",
+        "barbell_bench"
+      ],
+      "muscles": [
+        "Pectoral superior",
+        "Deltoides",
+        "Tríceps"
+      ],
+      "cautions": [
+        "Glúteos en banco",
+        "Muñecas rectas"
+      ],
+      "mistakes": [
+        "Rebote en pecho",
+        "Inclinación excesiva"
+      ],
+      "tips": [
+        "Codos a 45°",
+        "Bajada controlada",
+        "Empuje explosivo controlado"
+      ],
+      "steps": [
+        {
+          "title": "1. Arriba",
+          "text": "Barra sobre pecho alto, banco 30–45°.",
+          "camera": "side",
+          "pose": "incline_press_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Barra al pecho alto sin rebote.",
+          "camera": "side",
+          "pose": "incline_press_bottom",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Empuje",
+          "text": "Extiende codos sin perder retracción.",
+          "camera": "side",
+          "pose": "incline_press_top"
+        }
+      ]
+    },
+    {
+      "id": "flexiones",
+      "name": "Flexiones",
+      "category": "pecho",
+      "equipment": "Suelo",
+      "summary": "Cuerpo en línea recta, pecho al suelo.",
+      "default_angle": "side",
+      "props": [],
+      "muscles": [
+        "Pectoral",
+        "Tríceps",
+        "Core"
+      ],
+      "cautions": [
+        "Cuerpo alineado",
+        "Cuello neutro"
+      ],
+      "mistakes": [
+        "Cadera caída",
+        "Codos muy abiertos",
+        "Rango parcial"
+      ],
+      "tips": [
+        "Codos ~45°",
+        "Core apretado",
+        "Pecho cerca del suelo"
+      ],
+      "steps": [
+        {
+          "title": "1. Plancha",
+          "text": "Manos bajo hombros, cuerpo recto.",
+          "camera": "side",
+          "pose": "pushup_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Codos a 45°, pecho al suelo.",
+          "camera": "side",
+          "pose": "pushup_bottom",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Empuje",
+          "text": "Empuja manteniendo línea corporal.",
+          "camera": "three_quarter",
+          "pose": "pushup_top"
+        }
+      ]
+    },
+    {
+      "id": "cruce_polea",
+      "name": "Cruce en polea",
+      "category": "pecho",
+      "equipment": "Polea doble",
+      "summary": "Cruza las manos al frente apretando pectorales.",
+      "default_angle": "side",
+      "props": [
+        "cable_crossover"
+      ],
+      "muscles": [
+        "Pectoral",
+        "Deltoides anterior"
+      ],
+      "cautions": [
+        "Ligera flexión de codos",
+        "Pecho alto"
+      ],
+      "mistakes": [
+        "Bloquear codos",
+        "Usar demasiado peso"
+      ],
+      "tips": [
+        "Arco de convergencia",
+        "Contracción 1 s abajo",
+        "Control al volver"
+      ],
+      "steps": [
+        {
+          "title": "1. Apertura",
+          "text": "Brazos abiertos, ligera inclinación adelante.",
+          "camera": "front",
+          "pose": "crossover_start"
+        },
+        {
+          "title": "2. Cruce",
+          "text": "Junta manos al frente apretando pecho.",
+          "camera": "three_quarter",
+          "pose": "crossover_contract"
+        },
+        {
+          "title": "3. Vuelta",
+          "text": "Extiende controlando el peso.",
+          "camera": "side",
+          "pose": "crossover_start"
+        }
+      ]
+    },
+    {
+      "id": "empuje_frontal",
+      "name": "Empuje frontal",
+      "category": "hombros",
+      "equipment": "Mancuernas o polea",
+      "summary": "Elevación frontal para deltoides anterior.",
+      "default_angle": "side",
+      "props": [
+        "dumbbells"
+      ],
+      "muscles": [
+        "Deltoides anterior"
+      ],
+      "cautions": [
+        "Sin balanceo",
+        "No elevar por encima de hombros si molesta"
+      ],
+      "mistakes": [
+        "Arquear espalda",
+        "Usar impulso"
+      ],
+      "tips": [
+        "Brazos casi extendidos",
+        "Subida controlada",
+        "Bajada lenta"
+      ],
+      "steps": [
+        {
+          "title": "1. Abajo",
+          "text": "Mancuernas frente a muslos, codos semiflexionados.",
+          "camera": "front",
+          "pose": "front_raise_down"
+        },
+        {
+          "title": "2. Subida",
+          "text": "Eleva al frente hasta altura de hombros.",
+          "camera": "side",
+          "pose": "front_raise_up",
+          "angles": [
+            {
+              "label": "Hombro",
+              "range": "0–90°",
+              "note": "Flexión frontal"
+            }
+          ]
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Baja controlando 2 s.",
+          "camera": "side",
+          "pose": "front_raise_down"
+        }
+      ]
+    },
+    {
+      "id": "remo_barra",
+      "name": "Remo con barra",
+      "category": "espalda",
+      "equipment": "Barra olímpica",
+      "summary": "Bisagra de cadera, tira la barra al ombligo.",
+      "default_angle": "side",
+      "props": [
+        "barbell"
+      ],
+      "muscles": [
+        "Dorsal",
+        "Romboides",
+        "Bíceps"
+      ],
+      "cautions": [
+        "Espalda neutra",
+        "Barra al ombligo"
+      ],
+      "mistakes": [
+        "Redondear espalda",
+        "Tirar con bíceps solo",
+        "Encoger hombros"
+      ],
+      "tips": [
+        "Codos atrás",
+        "Pecho quieto",
+        "Apretar omóplatos"
+      ],
+      "steps": [
+        {
+          "title": "1. Posición",
+          "text": "Bisagra, agarre prono, brazos extendidos.",
+          "camera": "side",
+          "pose": "bb_row_start",
+          "angles": [
+            {
+              "label": "Espalda",
+              "range": "Neutra",
+              "note": "Sin redondear"
+            }
+          ]
+        },
+        {
+          "title": "2. Tirón",
+          "text": "Lleva codos atrás, barra al ombligo.",
+          "camera": "side",
+          "pose": "bb_row_pull",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Codos atrás"
+            }
+          ]
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Extiende controlando.",
+          "camera": "side",
+          "pose": "bb_row_start"
+        }
+      ]
+    },
+    {
+      "id": "remo_t",
+      "name": "Remo en T",
+      "category": "espalda",
+      "equipment": "Barra T o landmine",
+      "summary": "Tirón con agarre en T, pecho más vertical que remo con barra.",
+      "default_angle": "side",
+      "props": [
+        "tbar_row"
+      ],
+      "muscles": [
+        "Dorsal",
+        "Romboides",
+        "Trapecio medio"
+      ],
+      "cautions": [
+        "Espalda neutra",
+        "No usar impulso de cadera"
+      ],
+      "mistakes": [
+        "Redondear lumbar",
+        "Tirar con brazos solos"
+      ],
+      "tips": [
+        "Pecho alto",
+        "Codos cerca del cuerpo",
+        "Contracción escapular"
+      ],
+      "steps": [
+        {
+          "title": "1. Estiramiento",
+          "text": "Agarre en T, brazos extendidos, torso inclinado.",
+          "camera": "side",
+          "pose": "tbar_start"
+        },
+        {
+          "title": "2. Tirón",
+          "text": "Tira al pecho bajo, aprieta omóplatos.",
+          "camera": "side",
+          "pose": "tbar_pull",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Vuelta",
+          "text": "Extiende lento.",
+          "camera": "side",
+          "pose": "tbar_start"
+        }
+      ]
+    },
+    {
+      "id": "jalon",
+      "name": "Jalón al pecho",
+      "category": "espalda",
+      "equipment": "Polea alta",
+      "summary": "Tira la barra al pecho alto con codos hacia abajo.",
+      "default_angle": "side",
+      "props": [
+        "lat_pulldown"
+      ],
+      "muscles": [
+        "Dorsal ancho",
+        "Bíceps",
+        "Redondo mayor"
+      ],
+      "cautions": [
+        "No balancear torso",
+        "Hombros abajo"
+      ],
+      "mistakes": [
+        "Tirar detrás del cuello",
+        "Tirar con antebrazos",
+        "Encoger hombros"
+      ],
+      "tips": [
+        "Codos al bolsillo",
+        "Pecho quieto",
+        "Contracción arriba"
+      ],
+      "steps": [
+        {
+          "title": "1. Inicio",
+          "text": "Sentado, muslos fijos, brazos extendidos.",
+          "camera": "side",
+          "pose": "lat_pull_start",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "160–175°",
+              "note": "Arriba"
+            }
+          ]
+        },
+        {
+          "title": "2. Tirón",
+          "text": "Codos abajo y atrás.",
+          "camera": "three_quarter",
+          "pose": "lat_pull_mid",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "90–110°",
+              "note": "A mitad"
+            }
+          ]
+        },
+        {
+          "title": "3. Contracción",
+          "text": "Barra al pecho alto, pausa breve.",
+          "camera": "side",
+          "pose": "lat_pull_bottom",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "4. Subida",
+          "text": "Extiende controlando.",
+          "camera": "front",
+          "pose": "lat_pull_start"
+        }
+      ]
+    },
+    {
+      "id": "remo_unilateral",
+      "name": "Remo unilateral",
+      "category": "espalda",
+      "equipment": "Mancuerna + banco",
+      "summary": "Apoyo en banco, tira mancuerna al bolsillo.",
+      "default_angle": "side",
+      "props": [
+        "bench_flat",
+        "dumbbells"
+      ],
+      "muscles": [
+        "Dorsal",
+        "Romboides",
+        "Bíceps"
+      ],
+      "cautions": [
+        "Espalda paralela al suelo",
+        "Cadera estable"
+      ],
+      "mistakes": [
+        "Rotar torso",
+        "Encoger hombro"
+      ],
+      "tips": [
+        "Codo al bolsillo",
+        "Pausa abajo",
+        "Sin impulso"
+      ],
+      "steps": [
+        {
+          "title": "1. Estiramiento",
+          "text": "Mano y rodilla en banco, brazo extendido.",
+          "camera": "three_quarter",
+          "pose": "uni_row_start"
+        },
+        {
+          "title": "2. Tirón",
+          "text": "Lleva codo al techo, aprieta omóplato.",
+          "camera": "side",
+          "pose": "uni_row_pull",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Extiende controlando.",
+          "camera": "side",
+          "pose": "uni_row_start"
+        }
+      ]
+    },
+    {
+      "id": "curl_mancuernas",
+      "name": "Curl bíceps con mancuernas",
+      "category": "biceps",
+      "equipment": "Mancuernas",
+      "summary": "Codos fijos, flexión completa sin balanceo.",
+      "default_angle": "side",
+      "props": [
+        "dumbbells"
+      ],
+      "muscles": [
+        "Bíceps braquial"
+      ],
+      "cautions": [
+        "Codos quietos",
+        "Sin balanceo"
+      ],
+      "mistakes": [
+        "Mover codos adelante",
+        "Rango incompleto"
+      ],
+      "tips": [
+        "Supinación al subir",
+        "Contracción arriba",
+        "Bajada 2–3 s"
+      ],
+      "steps": [
+        {
+          "title": "1. Abajo",
+          "text": "Brazos extendidos, codos al torso.",
+          "camera": "three_quarter",
+          "pose": "curl_down"
+        },
+        {
+          "title": "2. Subida",
+          "text": "Flexiona sin mover codos.",
+          "camera": "side",
+          "pose": "curl_up",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "30–45°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Extiende controlando.",
+          "camera": "side",
+          "pose": "curl_down"
+        }
+      ]
+    },
+    {
+      "id": "curl_martillo",
+      "name": "Curl martillo",
+      "category": "biceps",
+      "equipment": "Mancuernas",
+      "summary": "Agarre neutro, enfatiza braquial y braquiorradial.",
+      "default_angle": "side",
+      "props": [
+        "dumbbells"
+      ],
+      "muscles": [
+        "Braquial",
+        "Bíceps",
+        "Antebrazo"
+      ],
+      "cautions": [
+        "Codos fijos",
+        "Muñecas neutras"
+      ],
+      "mistakes": [
+        "Balancear torso",
+        "Agarre incorrecto"
+      ],
+      "tips": [
+        "Palmas enfrentadas",
+        "Codos quietos",
+        "Rango completo"
+      ],
+      "steps": [
+        {
+          "title": "1. Abajo",
+          "text": "Mancuernas a los lados, agarre neutro.",
+          "camera": "side",
+          "pose": "hammer_down"
+        },
+        {
+          "title": "2. Subida",
+          "text": "Flexiona sin supinar.",
+          "camera": "side",
+          "pose": "hammer_up",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "30–45°",
+              "note": "Agarre neutro"
+            }
+          ]
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Control excéntrico.",
+          "camera": "side",
+          "pose": "hammer_down"
+        }
+      ]
+    },
+    {
+      "id": "curl_barra_z",
+      "name": "Curl con barra Z",
+      "category": "biceps",
+      "equipment": "Barra EZ",
+      "summary": "Agarre angular reduce estrés en muñeca.",
+      "default_angle": "side",
+      "props": [
+        "ez_bar"
+      ],
+      "muscles": [
+        "Bíceps braquial",
+        "Braquial"
+      ],
+      "cautions": [
+        "Codos al torso",
+        "Sin impulso"
+      ],
+      "mistakes": [
+        "Balanceo",
+        "Codos que avanzan"
+      ],
+      "tips": [
+        "Agarre en parte angulada",
+        "Subida controlada",
+        "No hiperextender abajo"
+      ],
+      "steps": [
+        {
+          "title": "1. Abajo",
+          "text": "Brazos extendidos, barra Z al frente.",
+          "camera": "side",
+          "pose": "ez_curl_down"
+        },
+        {
+          "title": "2. Subida",
+          "text": "Flexiona manteniendo codos fijos.",
+          "camera": "side",
+          "pose": "ez_curl_up",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Baja lento sin soltar tensión.",
+          "camera": "side",
+          "pose": "ez_curl_down"
+        }
+      ]
+    },
+    {
+      "id": "press_militar",
+      "name": "Press militar",
+      "category": "hombros",
+      "equipment": "Barra o mancuernas",
+      "summary": "Press vertical de pie o sentado, core activo.",
+      "default_angle": "side",
+      "props": [
+        "barbell_bench"
+      ],
+      "muscles": [
+        "Deltoides",
+        "Tríceps",
+        "Core"
+      ],
+      "cautions": [
+        "Core apretado",
+        "No arquear lumbar excesivo"
+      ],
+      "mistakes": [
+        "Arqueo lumbar excesivo",
+        "Abrir demasiado codos"
+      ],
+      "tips": [
+        "Barra frente al rostro",
+        "Empuje vertical",
+        "Mentón atrás al bajar"
+      ],
+      "steps": [
+        {
+          "title": "1. Arriba",
+          "text": "Barra sobre cabeza, brazos extendidos.",
+          "camera": "three_quarter",
+          "pose": "ohp_top"
+        },
+        {
+          "title": "2. Bajada",
+          "text": "Baja a la clavícula/controlado.",
+          "camera": "side",
+          "pose": "ohp_bottom",
+          "angles": [
+            {
+              "label": "Codo",
+              "range": "70–90°",
+              "note": "Contracción"
+            }
+          ]
+        },
+        {
+          "title": "3. Empuje",
+          "text": "Empuja vertical sin rebote.",
+          "camera": "side",
+          "pose": "ohp_top"
+        }
+      ]
+    },
+    {
+      "id": "vuelos_laterales",
+      "name": "Vuelos laterales",
+      "category": "hombros",
+      "equipment": "Mancuernas",
+      "summary": "Elevación lateral para deltoides medio.",
+      "default_angle": "side",
+      "props": [
+        "dumbbells"
+      ],
+      "muscles": [
+        "Deltoides lateral"
+      ],
+      "cautions": [
+        "Codos ligeramente flexionados",
+        "Sin trap impulso"
+      ],
+      "mistakes": [
+        "Demasiado peso",
+        "Elevar por encima de hombros con balanceo"
+      ],
+      "tips": [
+        "Subida hasta hombros",
+        "Meñiques ligeramente arriba",
+        "Bajada lenta"
+      ],
+      "steps": [
+        {
+          "title": "1. Abajo",
+          "text": "Mancuernas a los lados del cuerpo.",
+          "camera": "front",
+          "pose": "lat_raise_down"
+        },
+        {
+          "title": "2. Subida",
+          "text": "Eleva lateralmente hasta hombros.",
+          "camera": "side",
+          "pose": "lat_raise_up",
+          "angles": [
+            {
+              "label": "Hombro",
+              "range": "0–90°",
+              "note": "Abducción"
+            }
+          ]
+        },
+        {
+          "title": "3. Bajada",
+          "text": "Baja controlando 2–3 s.",
+          "camera": "side",
+          "pose": "lat_raise_down"
+        }
+      ]
+    }
+  ],
+  "poses": {
+    "squat_top": {
+      "l_thigh": [
+        5,
+        0,
+        0
+      ],
+      "r_thigh": [
+        5,
+        0,
+        0
+      ],
+      "l_shin": [
+        5,
+        0,
+        0
+      ],
+      "r_shin": [
+        5,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0.1,
+            1
+          ],
+          [
+            2.2
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            -6,
+            -0.1,
+            1
+          ],
+          [
+            2.2
+          ],
+          [
+            6,
+            5.9,
+            -6.6
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "squat_bottom": {
+      "pelvis": [
+        22,
+        0,
+        0
+      ],
+      "spine": [
+        14,
+        0,
+        0
+      ],
+      "l_thigh": [
+        88,
+        0,
+        0
+      ],
+      "r_thigh": [
+        88,
+        0,
+        0
+      ],
+      "l_shin": [
+        95,
+        0,
+        0
+      ],
+      "r_shin": [
+        95,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -32.6
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            -0.9,
+            -1.4,
+            56.9
+          ],
+          [
+            102.6
+          ],
+          [
+            -6,
+            -5.9,
+            -26.3
+          ],
+          [
+            0.9,
+            1.4,
+            56.9
+          ],
+          [
+            102.6
+          ],
+          [
+            6,
+            5.9,
+            -26.3
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "bulgarian_top": {
+      "l_thigh": [
+        8,
+        0,
+        0
+      ],
+      "r_thigh": [
+        35,
+        0,
+        0
+      ],
+      "l_shin": [
+        8,
+        0,
+        0
+      ],
+      "r_shin": [
+        55,
+        0,
+        0
+      ],
+      "r_foot": [
+        -25,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0.2,
+            1.6
+          ],
+          [
+            3.6
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            -4.6,
+            -2,
+            22.8
+          ],
+          [
+            59.4
+          ],
+          [
+            6,
+            5.9,
+            24.4
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "bulgarian_bottom": {
+      "pelvis": [
+        12,
+        0,
+        0
+      ],
+      "l_thigh": [
+        12,
+        0,
+        0
+      ],
+      "r_thigh": [
+        90,
+        0,
+        0
+      ],
+      "l_shin": [
+        10,
+        0,
+        0
+      ],
+      "r_shin": [
+        48,
+        0,
+        0
+      ],
+      "r_foot": [
+        -25,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -12.2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0.3,
+            2.4
+          ],
+          [
+            4.5
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            1.2,
+            1.9,
+            58.1
+          ],
+          [
+            97.2
+          ],
+          [
+            6,
+            5.9,
+            24.4
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "hack_top": {
+      "pelvis": [
+        8,
+        0,
+        0
+      ],
+      "l_thigh": [
+        12,
+        0,
+        0
+      ],
+      "r_thigh": [
+        12,
+        0,
+        0
+      ],
+      "l_shin": [
+        15,
+        0,
+        0
+      ],
+      "r_shin": [
+        15,
+        0,
+        0
+      ],
+      "props": {
+        "hack_pad": 0
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -8.8
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0.3,
+            2.4
+          ],
+          [
+            6.8
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            -6,
+            -0.3,
+            2.4
+          ],
+          [
+            6.8
+          ],
+          [
+            6,
+            5.9,
+            -6.6
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "hack_bottom": {
+      "pelvis": [
+        15,
+        0,
+        0
+      ],
+      "l_thigh": [
+        78,
+        0,
+        0
+      ],
+      "r_thigh": [
+        78,
+        0,
+        0
+      ],
+      "l_shin": [
+        85,
+        0,
+        0
+      ],
+      "r_shin": [
+        85,
+        0,
+        0
+      ],
+      "props": {
+        "hack_pad": 0.35
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -14.8
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0.2,
+            0.3,
+            50.6
+          ],
+          [
+            91.8
+          ],
+          [
+            -6,
+            -5.9,
+            -23.6
+          ],
+          [
+            -0.2,
+            -0.3,
+            50.6
+          ],
+          [
+            91.8
+          ],
+          [
+            6,
+            5.9,
+            -23.6
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "lunge_top": {
+      "l_thigh": [
+        5,
+        0,
+        0
+      ],
+      "r_thigh": [
+        5,
+        0,
+        0
+      ],
+      "l_shin": [
+        5,
+        0,
+        0
+      ],
+      "r_shin": [
+        5,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0.1,
+            1
+          ],
+          [
+            2.2
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            -6,
+            -0.1,
+            1
+          ],
+          [
+            2.2
+          ],
+          [
+            6,
+            5.9,
+            -6.6
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "lunge_down": {
+      "pelvis": [
+        8,
+        0,
+        0
+      ],
+      "l_thigh": [
+        75,
+        0,
+        0
+      ],
+      "r_thigh": [
+        28,
+        0,
+        0
+      ],
+      "l_shin": [
+        80,
+        0,
+        0
+      ],
+      "r_shin": [
+        12,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -8.8
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0.6,
+            0.7,
+            48.7
+          ],
+          [
+            86.4
+          ],
+          [
+            -6,
+            -5.9,
+            -22.2
+          ],
+          [
+            -5.1,
+            -1.7,
+            18.2
+          ],
+          [
+            30.2
+          ],
+          [
+            6,
+            5.9,
+            -8.2
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "dl_setup": {
+      "rootY": -0.18,
+      "pelvis": [
+        68,
+        0,
+        0
+      ],
+      "spine": [
+        50,
+        0,
+        0
+      ],
+      "chest": [
+        22,
+        0,
+        0
+      ],
+      "l_upper": [
+        -12,
+        0,
+        8
+      ],
+      "r_upper": [
+        -12,
+        0,
+        -8
+      ],
+      "l_lower": [
+        18,
+        0,
+        0
+      ],
+      "r_lower": [
+        18,
+        0,
+        0
+      ],
+      "l_thigh": [
+        58,
+        0,
+        0
+      ],
+      "r_thigh": [
+        58,
+        0,
+        0
+      ],
+      "l_shin": [
+        12,
+        0,
+        0
+      ],
+      "r_shin": [
+        12,
+        0,
+        0
+      ],
+      "props": {
+        "bar_lift": 0
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            -180,
+            0,
+            121
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            2.5,
+            1.9,
+            37.7
+          ],
+          [
+            62.6
+          ],
+          [
+            -6,
+            -5.9,
+            -16.3
+          ],
+          [
+            -2.5,
+            -1.9,
+            37.7
+          ],
+          [
+            62.6
+          ],
+          [
+            6,
+            5.9,
+            -16.3
+          ],
+          [
+            -3.4,
+            13.7,
+            -75.7
+          ],
+          [
+            3
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            8.4,
+            -27.2,
+            -72.2
+          ],
+          [
+            3
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "dl_top": {
+      "rootY": 0,
+      "pelvis": [
+        0,
+        0,
+        0
+      ],
+      "spine": [
+        0,
+        0,
+        0
+      ],
+      "l_upper": [
+        -8,
+        0,
+        6
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -6
+      ],
+      "l_thigh": [
+        3,
+        0,
+        0
+      ],
+      "r_thigh": [
+        3,
+        0,
+        0
+      ],
+      "props": {
+        "bar_lift": 1
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0.1,
+            0.6
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            -6,
+            -0.1,
+            0.6
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -6.6
+          ],
+          [
+            -4,
+            21,
+            -79
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            4.3,
+            -23.5,
+            -79.3
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "rdl_top": {
+      "rootY": 0,
+      "pelvis": [
+        0,
+        0,
+        0
+      ],
+      "spine": [
+        0,
+        0,
+        0
+      ],
+      "l_upper": [
+        -5,
+        0,
+        5
+      ],
+      "r_upper": [
+        -5,
+        0,
+        -5
+      ],
+      "l_thigh": [
+        5,
+        0,
+        0
+      ],
+      "r_thigh": [
+        5,
+        0,
+        0
+      ],
+      "props": {
+        "bar_lift": 0.55
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0.1,
+            1
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            -6,
+            -0.1,
+            1
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -6.6
+          ],
+          [
+            -4.7,
+            30.7,
+            -80.8
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            6.6,
+            -37.6,
+            -79.2
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "rdl_bottom": {
+      "rootY": -0.12,
+      "pelvis": [
+        48,
+        0,
+        0
+      ],
+      "spine": [
+        35,
+        0,
+        0
+      ],
+      "chest": [
+        15,
+        0,
+        0
+      ],
+      "l_upper": [
+        -8,
+        0,
+        6
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -6
+      ],
+      "l_lower": [
+        12,
+        0,
+        0
+      ],
+      "r_lower": [
+        12,
+        0,
+        0
+      ],
+      "l_thigh": [
+        42,
+        0,
+        0
+      ],
+      "r_thigh": [
+        42,
+        0,
+        0
+      ],
+      "l_shin": [
+        8,
+        0,
+        0
+      ],
+      "r_shin": [
+        8,
+        0,
+        0
+      ],
+      "props": {
+        "bar_lift": 0.35
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -85.3
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            4.1,
+            2.1,
+            27.3
+          ],
+          [
+            45.4
+          ],
+          [
+            -6,
+            -5.9,
+            -12
+          ],
+          [
+            -4.1,
+            -2.1,
+            27.3
+          ],
+          [
+            45.4
+          ],
+          [
+            6,
+            5.9,
+            -12
+          ],
+          [
+            -1.6,
+            10.1,
+            -81.2
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            2.4,
+            -15.1,
+            -81
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "db_dl_setup": {
+      "rootY": -0.15,
+      "pelvis": [
+        62,
+        0,
+        0
+      ],
+      "spine": [
+        45,
+        0,
+        0
+      ],
+      "l_upper": [
+        -15,
+        0,
+        12
+      ],
+      "r_upper": [
+        -15,
+        0,
+        -12
+      ],
+      "l_lower": [
+        20,
+        0,
+        0
+      ],
+      "r_lower": [
+        20,
+        0,
+        0
+      ],
+      "l_thigh": [
+        55,
+        0,
+        0
+      ],
+      "r_thigh": [
+        55,
+        0,
+        0
+      ],
+      "l_shin": [
+        12,
+        0,
+        0
+      ],
+      "r_shin": [
+        12,
+        0,
+        0
+      ],
+      "props": {
+        "db_height": 0.15
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            180,
+            0,
+            92.9
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            2.8,
+            2,
+            35.8
+          ],
+          [
+            59.4
+          ],
+          [
+            -6,
+            -5.9,
+            -15.5
+          ],
+          [
+            -2.8,
+            -2,
+            35.8
+          ],
+          [
+            59.4
+          ],
+          [
+            6,
+            5.9,
+            -15.5
+          ],
+          [
+            -0.6,
+            2,
+            -74.6
+          ],
+          [
+            5
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            6.8,
+            -20.9,
+            -71.6
+          ],
+          [
+            5
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "db_dl_top": {
+      "rootY": 0,
+      "pelvis": [
+        0,
+        0,
+        0
+      ],
+      "spine": [
+        0,
+        0,
+        0
+      ],
+      "l_upper": [
+        -10,
+        0,
+        10
+      ],
+      "r_upper": [
+        -10,
+        0,
+        -10
+      ],
+      "props": {
+        "db_height": 0.75
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -3.6,
+            16.2,
+            -77.4
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            6,
+            -25.6,
+            -76.3
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "trap_setup": {
+      "rootY": -0.16,
+      "pelvis": [
+        65,
+        0,
+        0
+      ],
+      "spine": [
+        48,
+        0,
+        0
+      ],
+      "l_upper": [
+        -18,
+        0,
+        8
+      ],
+      "r_upper": [
+        -18,
+        0,
+        -8
+      ],
+      "l_lower": [
+        22,
+        0,
+        0
+      ],
+      "r_lower": [
+        22,
+        0,
+        0
+      ],
+      "l_thigh": [
+        56,
+        0,
+        0
+      ],
+      "r_thigh": [
+        56,
+        0,
+        0
+      ],
+      "l_shin": [
+        10,
+        0,
+        0
+      ],
+      "r_shin": [
+        10,
+        0,
+        0
+      ],
+      "props": {
+        "trap_lift": 0
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            -180,
+            0,
+            98
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            2.7,
+            2,
+            36.4
+          ],
+          [
+            60.5
+          ],
+          [
+            -6,
+            -5.9,
+            -15.7
+          ],
+          [
+            -2.7,
+            -2,
+            36.4
+          ],
+          [
+            60.5
+          ],
+          [
+            6,
+            5.9,
+            -15.7
+          ],
+          [
+            -0.1,
+            0.3,
+            -71.8
+          ],
+          [
+            7
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            3.8,
+            -11,
+            -70.8
+          ],
+          [
+            7
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "trap_top": {
+      "rootY": 0,
+      "pelvis": [
+        0,
+        0,
+        0
+      ],
+      "spine": [
+        0,
+        0,
+        0
+      ],
+      "l_upper": [
+        -12,
+        0,
+        8
+      ],
+      "r_upper": [
+        -12,
+        0,
+        -8
+      ],
+      "props": {
+        "trap_lift": 0.9
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -3.4,
+            13.6,
+            -75.8
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            6.7,
+            -23.8,
+            -73.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "leg_curl_start": {
+      "rootY": -0.25,
+      "pelvis": [
+        -5,
+        0,
+        0
+      ],
+      "l_thigh": [
+        -15,
+        0,
+        0
+      ],
+      "r_thigh": [
+        -15,
+        0,
+        0
+      ],
+      "l_shin": [
+        8,
+        0,
+        0
+      ],
+      "r_shin": [
+        8,
+        0,
+        0
+      ],
+      "props": {
+        "leg_curl": 0
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            2.2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            5.9,
+            -0.7,
+            -6.8
+          ],
+          [
+            8
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            -5.9,
+            0.7,
+            -6.8
+          ],
+          [
+            8
+          ],
+          [
+            6,
+            5.9,
+            -6.6
+          ],
+          [
+            5.6,
+            -0.6,
+            -6.4
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -4.4,
+            0.6,
+            -7.3
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "leg_curl_contract": {
+      "rootY": -0.25,
+      "pelvis": [
+        -5,
+        0,
+        0
+      ],
+      "l_thigh": [
+        -15,
+        0,
+        0
+      ],
+      "r_thigh": [
+        -15,
+        0,
+        0
+      ],
+      "l_shin": [
+        -75,
+        0,
+        0
+      ],
+      "r_shin": [
+        -75,
+        0,
+        0
+      ],
+      "props": {
+        "leg_curl": 1
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            2.2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            5.9,
+            -0.7,
+            -6.8
+          ],
+          [
+            75
+          ],
+          [
+            -6,
+            -5.9,
+            -6.6
+          ],
+          [
+            -5.9,
+            0.7,
+            -6.8
+          ],
+          [
+            75
+          ],
+          [
+            6,
+            5.9,
+            -6.6
+          ],
+          [
+            7,
+            -0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -7,
+            0.6,
+            -4.9
+          ],
+          [
+            15
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "bench_press_top": {
+      "rootY": -0.48,
+      "pelvis": [
+        72,
+        0,
+        0
+      ],
+      "spine": [
+        16,
+        0,
+        0
+      ],
+      "l_thigh": [
+        55,
+        0,
+        0
+      ],
+      "r_thigh": [
+        55,
+        0,
+        0
+      ],
+      "l_shin": [
+        25,
+        0,
+        0
+      ],
+      "r_shin": [
+        25,
+        0,
+        0
+      ],
+      "l_upper": [
+        -78,
+        0,
+        35
+      ],
+      "r_upper": [
+        -78,
+        0,
+        -35
+      ],
+      "l_lower": [
+        10,
+        0,
+        0
+      ],
+      "r_lower": [
+        10,
+        0,
+        0
+      ],
+      "props": {
+        "press_bar": 1.75
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -83.3,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -9.5
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.8
+          ],
+          [
+            71.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.8
+          ],
+          [
+            71.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            8.3,
+            20.1,
+            67.1
+          ],
+          [
+            2
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            15.4,
+            26.6,
+            58.3
+          ],
+          [
+            2
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "bench_press_bottom": {
+      "rootY": -0.48,
+      "pelvis": [
+        72,
+        0,
+        0
+      ],
+      "spine": [
+        16,
+        0,
+        0
+      ],
+      "l_thigh": [
+        55,
+        0,
+        0
+      ],
+      "r_thigh": [
+        55,
+        0,
+        0
+      ],
+      "l_shin": [
+        25,
+        0,
+        0
+      ],
+      "r_shin": [
+        25,
+        0,
+        0
+      ],
+      "l_upper": [
+        -32,
+        0,
+        45
+      ],
+      "r_upper": [
+        -32,
+        0,
+        -45
+      ],
+      "l_lower": [
+        88,
+        0,
+        0
+      ],
+      "r_lower": [
+        88,
+        0,
+        0
+      ],
+      "props": {
+        "press_bar": 1.15
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -83.3,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -9.5
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            40.8,
+            14.8,
+            16.5
+          ],
+          [
+            80
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            23.7,
+            7.6,
+            16.8
+          ],
+          [
+            80
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "incline_press_top": {
+      "rootY": -0.55,
+      "pelvis": [
+        35,
+        0,
+        0
+      ],
+      "spine": [
+        28,
+        0,
+        0
+      ],
+      "chest": [
+        18,
+        0,
+        0
+      ],
+      "l_thigh": [
+        70,
+        0,
+        0
+      ],
+      "r_thigh": [
+        70,
+        0,
+        0
+      ],
+      "l_shin": [
+        28,
+        0,
+        0
+      ],
+      "r_shin": [
+        28,
+        0,
+        0
+      ],
+      "l_upper": [
+        -78,
+        0,
+        38
+      ],
+      "r_upper": [
+        -78,
+        0,
+        -38
+      ],
+      "l_lower": [
+        10,
+        0,
+        0
+      ],
+      "r_lower": [
+        10,
+        0,
+        0
+      ],
+      "props": {
+        "press_bar": 1.82
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -82.9,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -9.2
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.9
+          ],
+          [
+            81.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.9
+          ],
+          [
+            81.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            11,
+            25.8,
+            66
+          ],
+          [
+            2
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            18,
+            29.1,
+            56.3
+          ],
+          [
+            2
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "incline_press_bottom": {
+      "rootY": -0.55,
+      "pelvis": [
+        35,
+        0,
+        0
+      ],
+      "spine": [
+        28,
+        0,
+        0
+      ],
+      "l_upper": [
+        -32,
+        0,
+        48
+      ],
+      "r_upper": [
+        -32,
+        0,
+        -48
+      ],
+      "l_lower": [
+        88,
+        0,
+        0
+      ],
+      "r_lower": [
+        88,
+        0,
+        0
+      ],
+      "props": {
+        "press_bar": 1.12
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -81.8,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -8.5
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            43.2,
+            15.3,
+            15.7
+          ],
+          [
+            80
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            25.8,
+            8.2,
+            16.4
+          ],
+          [
+            80
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "db_press_top": {
+      "rootY": -0.48,
+      "pelvis": [
+        72,
+        0,
+        0
+      ],
+      "spine": [
+        16,
+        0,
+        0
+      ],
+      "l_thigh": [
+        55,
+        0,
+        0
+      ],
+      "r_thigh": [
+        55,
+        0,
+        0
+      ],
+      "l_shin": [
+        25,
+        0,
+        0
+      ],
+      "r_shin": [
+        25,
+        0,
+        0
+      ],
+      "l_upper": [
+        -75,
+        0,
+        42
+      ],
+      "r_upper": [
+        -75,
+        0,
+        -42
+      ],
+      "l_lower": [
+        12,
+        0,
+        0
+      ],
+      "r_lower": [
+        12,
+        0,
+        0
+      ],
+      "props": {
+        "db_press": 1.7
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -83.3,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -9.5
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            14.6,
+            29.4,
+            62
+          ],
+          [
+            4
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            20.2,
+            28.8,
+            52.7
+          ],
+          [
+            4
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "db_press_bottom": {
+      "rootY": -0.48,
+      "pelvis": [
+        72,
+        0,
+        0
+      ],
+      "spine": [
+        16,
+        0,
+        0
+      ],
+      "l_thigh": [
+        55,
+        0,
+        0
+      ],
+      "r_thigh": [
+        55,
+        0,
+        0
+      ],
+      "l_shin": [
+        25,
+        0,
+        0
+      ],
+      "r_shin": [
+        25,
+        0,
+        0
+      ],
+      "l_upper": [
+        -35,
+        0,
+        48
+      ],
+      "r_upper": [
+        -35,
+        0,
+        -48
+      ],
+      "l_lower": [
+        85,
+        0,
+        0
+      ],
+      "r_lower": [
+        85,
+        0,
+        0
+      ],
+      "props": {
+        "db_press": 1.1
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -83.3,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -9.5
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            42.5,
+            17.3,
+            18
+          ],
+          [
+            77
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            25.8,
+            9.5,
+            18.9
+          ],
+          [
+            77
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "pushup_top": {
+      "rootY": 0.52,
+      "pelvis": [
+        -8,
+        0,
+        0
+      ],
+      "spine": [
+        -8,
+        0,
+        0
+      ],
+      "l_upper": [
+        -72,
+        0,
+        28
+      ],
+      "r_upper": [
+        -72,
+        0,
+        -28
+      ],
+      "l_lower": [
+        8,
+        0,
+        0
+      ],
+      "r_lower": [
+        8,
+        0,
+        0
+      ],
+      "l_thigh": [
+        8,
+        0,
+        0
+      ],
+      "r_thigh": [
+        8,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            11.6
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0.2,
+            1.6
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -6,
+            -6.6
+          ],
+          [
+            -6,
+            -0.2,
+            1.6
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            6,
+            -6.6
+          ],
+          [
+            30.5,
+            -9.7,
+            -15.9
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            18.1,
+            -5.5,
+            -16.3
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "pushup_bottom": {
+      "rootY": 0.32,
+      "pelvis": [
+        -2,
+        0,
+        0
+      ],
+      "spine": [
+        -2,
+        0,
+        0
+      ],
+      "l_upper": [
+        -42,
+        0,
+        32
+      ],
+      "r_upper": [
+        -42,
+        0,
+        -32
+      ],
+      "l_lower": [
+        88,
+        0,
+        0
+      ],
+      "r_lower": [
+        88,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            1.4
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            19.9,
+            -22.7,
+            -46.7
+          ],
+          [
+            73
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            19.4,
+            -18.7,
+            -42.3
+          ],
+          [
+            73
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "crossover_start": {
+      "rootY": 0,
+      "l_upper": [
+        -45,
+        0,
+        55
+      ],
+      "r_upper": [
+        -45,
+        0,
+        -55
+      ],
+      "l_lower": [
+        15,
+        0,
+        0
+      ],
+      "r_lower": [
+        15,
+        0,
+        0
+      ],
+      "props": {
+        "cable_l": 0.3,
+        "cable_r": 0.3
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            37.1,
+            -37.3,
+            -38.7
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            37.4,
+            -28.3,
+            -31.8
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "crossover_contract": {
+      "rootY": 0,
+      "l_upper": [
+        -25,
+        0,
+        25
+      ],
+      "r_upper": [
+        -25,
+        0,
+        -25
+      ],
+      "l_lower": [
+        45,
+        0,
+        0
+      ],
+      "r_lower": [
+        45,
+        0,
+        0
+      ],
+      "props": {
+        "cable_l": 0.85,
+        "cable_r": 0.85
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            5.6,
+            -12.8,
+            -66
+          ],
+          [
+            30
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            10.3,
+            -19.8,
+            -61.8
+          ],
+          [
+            30
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "front_raise_down": {
+      "rootY": 0,
+      "l_upper": [
+        -8,
+        0,
+        8
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -8
+      ],
+      "l_lower": [
+        5,
+        0,
+        0
+      ],
+      "r_lower": [
+        5,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -6.8,
+            28.1,
+            -75.9
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            6.4,
+            -30,
+            -77.3
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "front_raise_up": {
+      "rootY": 0,
+      "l_upper": [
+        -75,
+        0,
+        5
+      ],
+      "r_upper": [
+        -75,
+        0,
+        -5
+      ],
+      "l_lower": [
+        8,
+        0,
+        0
+      ],
+      "r_lower": [
+        8,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            11,
+            -2.9,
+            -14.8
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -2.3,
+            0.6,
+            -15
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "bb_row_start": {
+      "rootY": -0.08,
+      "pelvis": [
+        52,
+        0,
+        0
+      ],
+      "spine": [
+        38,
+        0,
+        0
+      ],
+      "chest": [
+        20,
+        0,
+        0
+      ],
+      "l_upper": [
+        -12,
+        0,
+        8
+      ],
+      "r_upper": [
+        -12,
+        0,
+        -8
+      ],
+      "l_lower": [
+        15,
+        0,
+        0
+      ],
+      "r_lower": [
+        15,
+        0,
+        0
+      ],
+      "l_thigh": [
+        48,
+        0,
+        0
+      ],
+      "r_thigh": [
+        48,
+        0,
+        0
+      ],
+      "l_shin": [
+        12,
+        0,
+        0
+      ],
+      "r_shin": [
+        12,
+        0,
+        0
+      ],
+      "props": {
+        "bar_lift": 0.45
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            -180,
+            0,
+            95.5
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            3.5,
+            2.1,
+            31.2
+          ],
+          [
+            51.8
+          ],
+          [
+            -6,
+            -5.9,
+            -13.6
+          ],
+          [
+            -3.5,
+            -2.1,
+            31.2
+          ],
+          [
+            51.8
+          ],
+          [
+            6,
+            5.9,
+            -13.6
+          ],
+          [
+            -3.6,
+            14.3,
+            -75.6
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            8.4,
+            -27.3,
+            -72.1
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "bb_row_pull": {
+      "rootY": -0.08,
+      "pelvis": [
+        52,
+        0,
+        0
+      ],
+      "spine": [
+        38,
+        0,
+        0
+      ],
+      "l_upper": [
+        -28,
+        0,
+        55
+      ],
+      "r_upper": [
+        -28,
+        0,
+        -55
+      ],
+      "l_lower": [
+        105,
+        0,
+        0
+      ],
+      "r_lower": [
+        105,
+        0,
+        0
+      ],
+      "props": {
+        "bar_lift": 0.55
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -78.5
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            23.4,
+            -42.9,
+            -57.6
+          ],
+          [
+            90
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            30.7,
+            -39.5,
+            -47
+          ],
+          [
+            90
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "tbar_start": {
+      "rootY": -0.12,
+      "pelvis": [
+        58,
+        0,
+        0
+      ],
+      "spine": [
+        42,
+        0,
+        0
+      ],
+      "l_upper": [
+        -15,
+        0,
+        25
+      ],
+      "r_upper": [
+        -15,
+        0,
+        -25
+      ],
+      "l_lower": [
+        12,
+        0,
+        0
+      ],
+      "r_lower": [
+        12,
+        0,
+        0
+      ],
+      "l_thigh": [
+        52,
+        0,
+        0
+      ],
+      "r_thigh": [
+        52,
+        0,
+        0
+      ],
+      "props": {
+        "tbar_pull": 0
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -87
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            3.1,
+            2.1,
+            33.8
+          ],
+          [
+            56.2
+          ],
+          [
+            -6,
+            -5.9,
+            -14.7
+          ],
+          [
+            -3.1,
+            -2.1,
+            33.8
+          ],
+          [
+            56.2
+          ],
+          [
+            6,
+            5.9,
+            -14.7
+          ],
+          [
+            0.5,
+            -1.8,
+            -75.1
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            6.6,
+            -21.9,
+            -72.9
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "tbar_pull": {
+      "rootY": -0.12,
+      "pelvis": [
+        58,
+        0,
+        0
+      ],
+      "spine": [
+        42,
+        0,
+        0
+      ],
+      "l_upper": [
+        -32,
+        0,
+        65
+      ],
+      "r_upper": [
+        -32,
+        0,
+        -65
+      ],
+      "l_lower": [
+        112,
+        0,
+        0
+      ],
+      "r_lower": [
+        112,
+        0,
+        0
+      ],
+      "props": {
+        "tbar_pull": 1
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -87
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            30.9,
+            -49.5,
+            -51.8
+          ],
+          [
+            97
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            43.4,
+            -41.6,
+            -35.1
+          ],
+          [
+            97
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "lat_pull_start": {
+      "rootY": -0.38,
+      "pelvis": [
+        12,
+        0,
+        0
+      ],
+      "spine": [
+        10,
+        0,
+        0
+      ],
+      "chest": [
+        6,
+        0,
+        0
+      ],
+      "l_upper": [
+        -168,
+        0,
+        22
+      ],
+      "r_upper": [
+        -168,
+        0,
+        -22
+      ],
+      "l_lower": [
+        8,
+        0,
+        0
+      ],
+      "r_lower": [
+        8,
+        0,
+        0
+      ],
+      "props": {
+        "pull_bar": 2.45
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -79.7,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -7.1
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.8
+          ],
+          [
+            71.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.8
+          ],
+          [
+            71.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            -26.3,
+            10.1,
+            -19.5
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            -5.8,
+            2.6,
+            -23.9
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "lat_pull_mid": {
+      "rootY": -0.38,
+      "pelvis": [
+        14,
+        0,
+        0
+      ],
+      "spine": [
+        12,
+        0,
+        0
+      ],
+      "l_upper": [
+        -85,
+        0,
+        32
+      ],
+      "r_upper": [
+        -85,
+        0,
+        -32
+      ],
+      "l_lower": [
+        85,
+        0,
+        0
+      ],
+      "r_lower": [
+        85,
+        0,
+        0
+      ],
+      "props": {
+        "pull_bar": 1.78
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -79.6,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            4,
+            14.3,
+            74.1
+          ],
+          [
+            77
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            14.9,
+            32.5,
+            63.6
+          ],
+          [
+            77
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "lat_pull_bottom": {
+      "rootY": -0.38,
+      "pelvis": [
+        14,
+        0,
+        0
+      ],
+      "spine": [
+        10,
+        0,
+        0
+      ],
+      "l_upper": [
+        -42,
+        0,
+        38
+      ],
+      "r_upper": [
+        -42,
+        0,
+        -38
+      ],
+      "l_lower": [
+        115,
+        0,
+        0
+      ],
+      "r_lower": [
+        115,
+        0,
+        0
+      ],
+      "props": {
+        "pull_bar": 1.32
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -79.4,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            0,
+            0,
+            -7
+          ],
+          [
+            12.1,
+            11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            -5.7,
+            -4.4,
+            -18.6
+          ],
+          [
+            -12.1,
+            -11.1,
+            41.9
+          ],
+          [
+            71.8
+          ],
+          [
+            5.7,
+            4.4,
+            -18.6
+          ],
+          [
+            32.1,
+            18.6,
+            27
+          ],
+          [
+            107
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            18.6,
+            9.7,
+            26.5
+          ],
+          [
+            107
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "uni_row_start": {
+      "rootY": -0.18,
+      "pelvis": [
+        58,
+        0,
+        0
+      ],
+      "spine": [
+        42,
+        0,
+        0
+      ],
+      "chest": [
+        25,
+        0,
+        0
+      ],
+      "l_upper": [
+        -15,
+        0,
+        45
+      ],
+      "r_upper": [
+        -25,
+        0,
+        -15
+      ],
+      "l_lower": [
+        12,
+        0,
+        0
+      ],
+      "r_lower": [
+        8,
+        0,
+        0
+      ],
+      "l_thigh": [
+        48,
+        0,
+        0
+      ],
+      "r_thigh": [
+        55,
+        0,
+        0
+      ],
+      "props": {
+        "db_row": 0.2
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            -180,
+            0,
+            108.3
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            3.5,
+            2.1,
+            31.2
+          ],
+          [
+            51.8
+          ],
+          [
+            -6,
+            -6,
+            -13.6
+          ],
+          [
+            -2.8,
+            -2,
+            35.8
+          ],
+          [
+            59.4
+          ],
+          [
+            6,
+            6,
+            -15.5
+          ],
+          [
+            7.6,
+            -31.1,
+            -75.5
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            10,
+            -18.1,
+            -60.6
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "uni_row_pull": {
+      "rootY": -0.18,
+      "pelvis": [
+        58,
+        0,
+        0
+      ],
+      "spine": [
+        42,
+        0,
+        0
+      ],
+      "l_upper": [
+        -35,
+        0,
+        72
+      ],
+      "r_upper": [
+        -25,
+        0,
+        -15
+      ],
+      "l_lower": [
+        115,
+        0,
+        0
+      ],
+      "r_lower": [
+        8,
+        0,
+        0
+      ],
+      "props": {
+        "db_row": 0.75
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -87
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            -0.2
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            34.9,
+            -54.2,
+            -49.3
+          ],
+          [
+            100
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            7.1,
+            -14.1,
+            -62.7
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "curl_down": {
+      "l_upper": [
+        -8,
+        0,
+        8
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -8
+      ],
+      "l_lower": [
+        5,
+        0,
+        0
+      ],
+      "r_lower": [
+        5,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -6.7,
+            28.3,
+            -76
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            7.8,
+            -33,
+            -75.9
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "curl_up": {
+      "l_upper": [
+        -8,
+        0,
+        8
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -8
+      ],
+      "l_lower": [
+        135,
+        0,
+        0
+      ],
+      "r_lower": [
+        135,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -1.6,
+            10.3,
+            -81.1
+          ],
+          [
+            120
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            3.5,
+            -20.8,
+            -80.1
+          ],
+          [
+            120
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "hammer_down": {
+      "l_upper": [
+        -8,
+        0,
+        5
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -5
+      ],
+      "l_lower": [
+        5,
+        0,
+        0
+      ],
+      "r_lower": [
+        5,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -4.7,
+            23.4,
+            -78.3
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            5.3,
+            -26.6,
+            -78.3
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "hammer_up": {
+      "l_upper": [
+        -8,
+        0,
+        5
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -5
+      ],
+      "l_lower": [
+        130,
+        0,
+        0
+      ],
+      "r_lower": [
+        130,
+        0,
+        0
+      ],
+      "l_hand": [
+        0,
+        0,
+        90
+      ],
+      "r_hand": [
+        0,
+        0,
+        -90
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -2.8,
+            16.3,
+            -80.3
+          ],
+          [
+            115
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            4.2,
+            -22.9,
+            -79.4
+          ],
+          [
+            115
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "ez_curl_down": {
+      "l_upper": [
+        -8,
+        0,
+        10
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -10
+      ],
+      "l_lower": [
+        5,
+        0,
+        0
+      ],
+      "r_lower": [
+        5,
+        0,
+        0
+      ],
+      "props": {
+        "ez_angle": 0
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -2.8,
+            16.1,
+            -80
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            6.1,
+            -29.7,
+            -77.7
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "ez_curl_up": {
+      "l_upper": [
+        -8,
+        0,
+        10
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -10
+      ],
+      "l_lower": [
+        132,
+        0,
+        0
+      ],
+      "r_lower": [
+        132,
+        0,
+        0
+      ],
+      "props": {
+        "ez_angle": 1
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -2.8,
+            16.2,
+            -80
+          ],
+          [
+            117
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            4.6,
+            -25.1,
+            -79.2
+          ],
+          [
+            117
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "ohp_top": {
+      "rootY": 0,
+      "l_upper": [
+        -175,
+        0,
+        15
+      ],
+      "r_upper": [
+        -175,
+        0,
+        -15
+      ],
+      "l_lower": [
+        5,
+        0,
+        0
+      ],
+      "r_lower": [
+        5,
+        0,
+        0
+      ],
+      "props": {
+        "ohp_bar": 2.1
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -3.8,
+            -26.2,
+            81.5
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            10,
+            46,
+            76.2
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "ohp_bottom": {
+      "rootY": 0,
+      "l_upper": [
+        -95,
+        0,
+        25
+      ],
+      "r_upper": [
+        -95,
+        0,
+        -25
+      ],
+      "l_lower": [
+        85,
+        0,
+        0
+      ],
+      "r_lower": [
+        85,
+        0,
+        0
+      ],
+      "props": {
+        "ohp_bar": 1.55
+      },
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            29.3,
+            2.7,
+            4.8
+          ],
+          [
+            70
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            15.5,
+            1.3,
+            4.6
+          ],
+          [
+            70
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "lat_raise_down": {
+      "rootY": 0,
+      "l_upper": [
+        -8,
+        0,
+        8
+      ],
+      "r_upper": [
+        -8,
+        0,
+        -8
+      ],
+      "l_lower": [
+        5,
+        0,
+        0
+      ],
+      "r_lower": [
+        5,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            -4.7,
+            23.1,
+            -78.1
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            11.8,
+            -39,
+            -71.6
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    },
+    "lat_raise_up": {
+      "rootY": 0,
+      "l_upper": [
+        -88,
+        0,
+        75
+      ],
+      "r_upper": [
+        -88,
+        0,
+        -75
+      ],
+      "l_lower": [
+        12,
+        0,
+        0
+      ],
+      "r_lower": [
+        12,
+        0,
+        0
+      ],
+      "mannequin": {
+        "version": 7,
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -90,
+            0
+          ],
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -6,
+            -5.9,
+            -0.6
+          ],
+          [
+            -6,
+            0,
+            0
+          ],
+          [
+            0
+          ],
+          [
+            6,
+            5.9,
+            -0.6
+          ],
+          [
+            74.5,
+            -0.5,
+            -0.1
+          ],
+          [
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            -90,
+            70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            60.5,
+            -2.1,
+            -1.2
+          ],
+          [
+            0
+          ],
+          [
+            -5,
+            0,
+            0
+          ],
+          [
+            90,
+            -70,
+            95,
+            0,
+            5,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10
+          ]
+        ]
+      },
+      "_engineVer": 10
+    }
+  }
+}

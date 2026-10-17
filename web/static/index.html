@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0c">
+  <title>Wolf Strength · Biblioteca de ejercicios 3D</title>
+  <link rel="icon" href="/static/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/guide.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/static/vendor/three/build/three.module.js",
+      "three/addons/": "/static/vendor/three/examples/jsm/",
+      "mannequin": "/static/vendor/mannequin-js/mannequin.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="/static/logo.jpg" alt="" class="logo">
+      <div>
+        <h1>WOLF <span>STRENGTH</span></h1>
+        <p>BIBLIOTECA 3D</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="panel left">
+      <input type="search" id="searchInput" class="search" placeholder="Buscar…" autocomplete="off">
+      <div id="exerciseList" class="exercise-list"></div>
+    </aside>
+
+    <main class="viewport">
+      <canvas id="canvas3d"></canvas>
+      <div id="loadOverlay" class="load-overlay" aria-live="polite">
+        <div class="load-spinner"></div>
+        <p id="loadText">Cargando modelo 3D…</p>
+      </div>
+
+      <div class="hud">
+        <div class="hud-top" id="hudTop">
+          <div class="hud-title">
+            <h2 id="exTitle">Elige un ejercicio</h2>
+            <span id="stepCounter" class="phase-pill hidden">—</span>
+          </div>
+          <p id="stepText" class="hud-desc">La guía aparece aquí sobre el modelo.</p>
+        </div>
+
+        <div id="calloutLayer" class="callout-layer"></div>
+
+        <div class="hud-bottom">
+          <div class="transport">
+            <button id="prevBtn" type="button" class="icon-btn" title="Fase anterior">‹</button>
+            <button id="playBtn" type="button" class="play-btn">▶</button>
+            <button id="nextBtn" type="button" class="icon-btn" title="Siguiente fase">›</button>
+          </div>
+          <div id="phaseTimeline" class="phase-timeline"></div>
+          <div class="angle-row" id="angleRow"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/static/js/guide-app.js?v=107"></script>
+</body>
+</html>

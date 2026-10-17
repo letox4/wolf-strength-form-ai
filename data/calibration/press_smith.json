@@ -1,0 +1,14 @@
+{
+  "exercise_id": "press_smith",
+  "label": "Press inclinado Smith",
+  "source_video": "VID-20260623-WA0007.mp4",
+  "reps_detected": 0,
+  "note": "Fallback hasta recalibrar con GPU",
+  "metrics": {
+    "elbow": { "min": 70, "max": 178, "p10": 82, "p50": 98, "p90": 172 },
+    "bottom_rep": { "p10": 75, "p50": 90, "p90": 105 },
+    "top_rep": { "p10": 155, "p50": 168, "p90": 178 },
+    "torso": { "p10": 12, "p50": 25, "p90": 38 }
+  },
+  "rep_thresholds": { "enter_down": 120, "exit_up": 150 }
+}

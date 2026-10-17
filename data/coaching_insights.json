@@ -1,0 +1,2357 @@
+{
+  "version": 1,
+  "comparisons": [
+    {
+      "id": "squat_hack",
+      "title": "Sentadilla libre vs Hack squat",
+      "a": "sentadilla",
+      "b": "hack_squat",
+      "insight": "En hack squat el torso queda más vertical y la rodilla viaja más al frente con menos demanda de tobillo. Si pierdes profundidad por talones o lumbar, el hack te permite cargar pierna sin forzar la misma geometría.",
+      "joint_focus": "Tobillo y cadera"
+    },
+    {
+      "id": "dl_conv_rdl",
+      "title": "Peso muerto convencional vs Rumano",
+      "a": "peso_muerto_conv",
+      "b": "peso_muerto_rumano",
+      "insight": "Convencional: más flexión de rodilla al inicio, barra desde el suelo. Rumano: bisagra pura con rodillas semiflejadas, énfasis en isquios y glúteos. No son intercambiables si buscas un estímulo concreto.",
+      "joint_focus": "Rodilla vs cadera"
+    },
+    {
+      "id": "press_flat_incline",
+      "title": "Press plano vs Inclinado",
+      "a": "press_plano_mancuernas",
+      "b": "press_inclinado_mancuernas",
+      "insight": "Inclinado aumenta el ángulo del hombro y carga más la porción clavicular del pecho. Plano reparte más en el pecho medio. Elige según qué zona quieres priorizar, no solo por 'variar'.",
+      "joint_focus": "Hombro y pecho"
+    },
+    {
+      "id": "curl_hammer",
+      "title": "Curl supino vs Martillo",
+      "a": "curl_mancuernas",
+      "b": "curl_martillo",
+      "insight": "Supino enfatiza cabeza corta del bíceps; martillo (neutro) mete más braquial y antebrazo. Si el codo molesta en supino, el martillo suele ser más tolerable.",
+      "joint_focus": "Codo y antebrazo"
+    }
+  ],
+  "exercises": {
+    "sentadilla": {
+      "live_id": "sentadilla",
+      "live_available": true,
+      "watch_metrics": [
+        "Rodilla",
+        "Torso"
+      ],
+      "watch_intro": "Medimos profundidad real en el fondo, inclinación de torso y si la rodilla se adelanta al tobillo.",
+      "anthropometry": "Fémur largo respecto al torso → más inclinación al bajar no siempre es error; lo crítico es mantener el peso sobre el mediopié y rodillas alineadas con los pies.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "long_femur",
+          "q": "¿Torso muy inclinado aunque rodillas sigan bien?",
+          "if_yes": "ok_variant",
+          "msg": "Con fémur largo respecto al torso, más inclinación puede ser geometría normal, no 'mala técnica'. Prioriza peso sobre mediopié.",
+          "alt": null
+        }
+      ],
+      "error_trees": {
+        "Rodillas hacia dentro": {
+          "causes": [
+            "Déficit de dorsiflexión de tobillo",
+            "Glúteo medio débil en la bajada",
+            "Pie demasiado estrecho para tu anatomía"
+          ],
+          "fixes": [
+            "Prueba pies un poco más abiertos",
+            "Pista: rodillas siguen la punta del pie",
+            "Movilidad de tobillo 2–3 min antes de entrenar"
+          ],
+          "alt_exercise": "hack_squat"
+        },
+        "Perder neutralidad lumbar": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Poca profundidad": {
+          "causes": [
+            "Tobillo limitado",
+            "Miedo a perder equilibrio",
+            "Falta de control excéntrico"
+          ],
+          "fixes": [
+            "Box squat para aprender profundidad",
+            "Goblet squat con pausa",
+            "Trabaja excéntrica lenta"
+          ],
+          "alt_exercise": "hack_squat"
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Arriba",
+          "angles": {
+            "Rodilla": {
+              "why": "Por debajo de ~90° el momento en rodilla aumenta; si el torso se va mucho al frente, la carga se aleja del centro y la lumbar trabaja de más.",
+              "good_sign": "Rodillas siguen la punta del pie sin colapsar hacia dentro."
+            }
+          },
+          "coaching": "Pies ancho de hombros, core activo, mirada al frente."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Rodilla": {
+              "why": "Por debajo de ~90° el momento en rodilla aumenta; si el torso se va mucho al frente, la carga se aleja del centro y la lumbar trabaja de más.",
+              "good_sign": "Rodillas siguen la punta del pie sin colapsar hacia dentro."
+            },
+            "Cadera": {
+              "why": "La bisagra de cadera reparte carga entre glúteo e isquios; sin ella la rodilla o la espalda absorben lo que no deberían.",
+              "good_sign": "Sientes el peso en glúteos, no solo en rodillas."
+            }
+          },
+          "coaching": "Cadera atrás y abajo. Rodillas siguen los pies."
+        },
+        "2": {
+          "phase_title": "3. Subida",
+          "angles": {},
+          "coaching": "Empuja con todo el pie sin dejar colapsar rodillas."
+        }
+      },
+      "comparison_ids": [
+        "squat_hack"
+      ],
+      "session_patterns": [
+        {
+          "if_issue_contains": "profundidad",
+          "hypothesis": "Tobillo o control excéntrico limitan la bajada.",
+          "next": "Prueba box squat o hack squat; 2 semanas de movilidad de tobillo."
+        },
+        {
+          "if_issue_contains": "inclin",
+          "hypothesis": "Carga adelantada o core que cede en la bajada.",
+          "next": "Goblet squat con pausa; refuerza brace abdominal."
+        },
+        {
+          "if_issue_contains": "rodilla",
+          "hypothesis": "Rodillas adelantadas o valgo bajo fatiga.",
+          "next": "Pies más abiertos; banda elástica sobre rodillas en calentamiento."
+        }
+      ]
+    },
+    "bulgara": {
+      "live_id": "sentadilla",
+      "live_available": true,
+      "watch_metrics": [
+        "Rodilla",
+        "Torso"
+      ],
+      "watch_intro": "Medimos profundidad real en el fondo, inclinación de torso y si la rodilla se adelanta al tobillo.",
+      "anthropometry": "Fémur largo respecto al torso → más inclinación al bajar no siempre es error; lo crítico es mantener el peso sobre el mediopié y rodillas alineadas con los pies.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "long_femur",
+          "q": "¿Torso muy inclinado aunque rodillas sigan bien?",
+          "if_yes": "ok_variant",
+          "msg": "Con fémur largo respecto al torso, más inclinación puede ser geometría normal, no 'mala técnica'. Prioriza peso sobre mediopié.",
+          "alt": null
+        }
+      ],
+      "error_trees": {
+        "Inclinarse demasiado": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Rodilla delantera colapsando": {
+          "causes": [
+            "Déficit de dorsiflexión de tobillo",
+            "Glúteo medio débil en la bajada",
+            "Pie demasiado estrecho para tu anatomía"
+          ],
+          "fixes": [
+            "Prueba pies un poco más abiertos",
+            "Pista: rodillas siguen la punta del pie",
+            "Movilidad de tobillo 2–3 min antes de entrenar"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Posición",
+          "angles": {},
+          "coaching": "Pie trasero en banco, pie delantero adelante. Torso vertical."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Rodilla": {
+              "why": "Por debajo de ~90° el momento en rodilla aumenta; si el torso se va mucho al frente, la carga se aleja del centro y la lumbar trabaja de más.",
+              "good_sign": "Rodillas siguen la punta del pie sin colapsar hacia dentro."
+            }
+          },
+          "coaching": "Baja hasta muslo paralelo o rodilla trasera cerca del suelo."
+        },
+        "2": {
+          "phase_title": "3. Subida",
+          "angles": {},
+          "coaching": "Empuja con el talón delantero."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "profundidad",
+          "hypothesis": "Tobillo o control excéntrico limitan la bajada.",
+          "next": "Prueba box squat o hack squat; 2 semanas de movilidad de tobillo."
+        },
+        {
+          "if_issue_contains": "inclin",
+          "hypothesis": "Carga adelantada o core que cede en la bajada.",
+          "next": "Goblet squat con pausa; refuerza brace abdominal."
+        },
+        {
+          "if_issue_contains": "rodilla",
+          "hypothesis": "Rodillas adelantadas o valgo bajo fatiga.",
+          "next": "Pies más abiertos; banda elástica sobre rodillas en calentamiento."
+        }
+      ]
+    },
+    "hack_squat": {
+      "live_id": "sentadilla",
+      "live_available": true,
+      "watch_metrics": [
+        "Rodilla",
+        "Torso"
+      ],
+      "watch_intro": "Medimos profundidad real en el fondo, inclinación de torso y si la rodilla se adelanta al tobillo.",
+      "anthropometry": "Fémur largo respecto al torso → más inclinación al bajar no siempre es error; lo crítico es mantener el peso sobre el mediopié y rodillas alineadas con los pies.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "long_femur",
+          "q": "¿Torso muy inclinado aunque rodillas sigan bien?",
+          "if_yes": "ok_variant",
+          "msg": "Con fémur largo respecto al torso, más inclinación puede ser geometría normal, no 'mala técnica'. Prioriza peso sobre mediopié.",
+          "alt": null
+        }
+      ],
+      "error_trees": {
+        "Despegar espalda del respaldo": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Pies muy juntos sin control": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Arriba",
+          "angles": {},
+          "coaching": "Espalda y hombros en el respaldo. Piernas casi extendidas."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Rodilla": {
+              "why": "Por debajo de ~90° el momento en rodilla aumenta; si el torso se va mucho al frente, la carga se aleja del centro y la lumbar trabaja de más.",
+              "good_sign": "Rodillas siguen la punta del pie sin colapsar hacia dentro."
+            }
+          },
+          "coaching": "Flexiona rodillas sin perder contacto lumbar."
+        },
+        "2": {
+          "phase_title": "3. Empuje",
+          "angles": {},
+          "coaching": "Extiende sin hiperextender."
+        }
+      },
+      "comparison_ids": [
+        "squat_hack"
+      ],
+      "session_patterns": [
+        {
+          "if_issue_contains": "profundidad",
+          "hypothesis": "Tobillo o control excéntrico limitan la bajada.",
+          "next": "Prueba box squat o hack squat; 2 semanas de movilidad de tobillo."
+        },
+        {
+          "if_issue_contains": "inclin",
+          "hypothesis": "Carga adelantada o core que cede en la bajada.",
+          "next": "Goblet squat con pausa; refuerza brace abdominal."
+        },
+        {
+          "if_issue_contains": "rodilla",
+          "hypothesis": "Rodillas adelantadas o valgo bajo fatiga.",
+          "next": "Pies más abiertos; banda elástica sobre rodillas en calentamiento."
+        }
+      ]
+    },
+    "estocadas": {
+      "live_id": "sentadilla",
+      "live_available": true,
+      "watch_metrics": [
+        "Rodilla",
+        "Torso"
+      ],
+      "watch_intro": "Medimos profundidad real en el fondo, inclinación de torso y si la rodilla se adelanta al tobillo.",
+      "anthropometry": "Fémur largo respecto al torso → más inclinación al bajar no siempre es error; lo crítico es mantener el peso sobre el mediopié y rodillas alineadas con los pies.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "long_femur",
+          "q": "¿Torso muy inclinado aunque rodillas sigan bien?",
+          "if_yes": "ok_variant",
+          "msg": "Con fémur largo respecto al torso, más inclinación puede ser geometría normal, no 'mala técnica'. Prioriza peso sobre mediopié.",
+          "alt": null
+        }
+      ],
+      "error_trees": {
+        "Paso demasiado corto": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Inclinarse excesivamente": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Inicio",
+          "angles": {},
+          "coaching": "De pie, paso largo hacia delante."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Rodilla": {
+              "why": "Por debajo de ~90° el momento en rodilla aumenta; si el torso se va mucho al frente, la carga se aleja del centro y la lumbar trabaja de más.",
+              "good_sign": "Rodillas siguen la punta del pie sin colapsar hacia dentro."
+            }
+          },
+          "coaching": "Baja verticalmente. Rodilla trasera hacia el suelo."
+        },
+        "2": {
+          "phase_title": "3. Subida",
+          "angles": {},
+          "coaching": "Empuja con el talón delantero para volver."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "profundidad",
+          "hypothesis": "Tobillo o control excéntrico limitan la bajada.",
+          "next": "Prueba box squat o hack squat; 2 semanas de movilidad de tobillo."
+        },
+        {
+          "if_issue_contains": "inclin",
+          "hypothesis": "Carga adelantada o core que cede en la bajada.",
+          "next": "Goblet squat con pausa; refuerza brace abdominal."
+        },
+        {
+          "if_issue_contains": "rodilla",
+          "hypothesis": "Rodillas adelantadas o valgo bajo fatiga.",
+          "next": "Pies más abiertos; banda elástica sobre rodillas en calentamiento."
+        }
+      ]
+    },
+    "peso_muerto_conv": {
+      "live_id": "peso_muerto",
+      "live_available": true,
+      "watch_metrics": [
+        "Torso",
+        "Rodilla"
+      ],
+      "watch_intro": "Bisagra de cadera con espalda neutra; barra cerca del cuerpo.",
+      "anthropometry": "Brazos largos facilitan el convencional desde el suelo; brazos cortos suelen sentirse mejor con déficit o más flexión de rodilla al inicio.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "round",
+          "q": "¿Redondeas lumbar al iniciar desde el suelo?",
+          "if_yes": "avoid",
+          "msg": "Empieza con rumano o elevaciones desde bloques hasta dominar bisagra.",
+          "alt": "peso_muerto_rumano",
+          "alt_label": "Peso muerto rumano"
+        }
+      ],
+      "error_trees": {
+        "Espalda redondeada": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Barra lejos de piernas": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Tirar solo de espalda": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Setup",
+          "angles": {
+            "Cadera": {
+              "why": "La bisagra de cadera reparte carga entre glúteo e isquios; sin ella la rodilla o la espalda absorben lo que no deberían.",
+              "good_sign": "Sientes el peso en glúteos, no solo en rodillas."
+            },
+            "Espalda": {
+              "why": "La posición del torso determina qué músculos reciben tensión y cuánta carga pasa por la columna.",
+              "good_sign": "Pecho abierto, columna neutra en todo el recorrido."
+            }
+          },
+          "coaching": "Pies al ancho de caderas, agarre fuera de piernas, pecho arriba."
+        },
+        "1": {
+          "phase_title": "2. Subida",
+          "angles": {
+            "Cadera": {
+              "why": "La bisagra de cadera reparte carga entre glúteo e isquios; sin ella la rodilla o la espalda absorben lo que no deberían.",
+              "good_sign": "Sientes el peso en glúteos, no solo en rodillas."
+            }
+          },
+          "coaching": "Empuja suelo, barra rozando muslos."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Cadera atrás primero, barra pegada."
+        }
+      },
+      "comparison_ids": [
+        "dl_conv_rdl"
+      ],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "peso_muerto_rumano": {
+      "live_id": "peso_muerto",
+      "live_available": true,
+      "watch_metrics": [
+        "Torso",
+        "Rodilla"
+      ],
+      "watch_intro": "Bisagra de cadera con espalda neutra; barra cerca del cuerpo.",
+      "anthropometry": "Brazos largos facilitan el convencional desde el suelo; brazos cortos suelen sentirse mejor con déficit o más flexión de rodilla al inicio.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "round",
+          "q": "¿Redondeas lumbar al iniciar desde el suelo?",
+          "if_yes": "avoid",
+          "msg": "Empieza con rumano o elevaciones desde bloques hasta dominar bisagra.",
+          "alt": "peso_muerto_rumano",
+          "alt_label": "Peso muerto rumano"
+        }
+      ],
+      "error_trees": {
+        "Flexionar demasiado rodillas": {
+          "causes": [
+            "Déficit de dorsiflexión de tobillo",
+            "Glúteo medio débil en la bajada",
+            "Pie demasiado estrecho para tu anatomía"
+          ],
+          "fixes": [
+            "Prueba pies un poco más abiertos",
+            "Pista: rodillas siguen la punta del pie",
+            "Movilidad de tobillo 2–3 min antes de entrenar"
+          ],
+          "alt_exercise": null
+        },
+        "Redondear espalda": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Bajar sin control": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Arriba",
+          "angles": {},
+          "coaching": "De pie, barra a la altura de caderas."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Cadera": {
+              "why": "La bisagra de cadera reparte carga entre glúteo e isquios; sin ella la rodilla o la espalda absorben lo que no deberían.",
+              "good_sign": "Sientes el peso en glúteos, no solo en rodillas."
+            },
+            "Espalda": {
+              "why": "La posición del torso determina qué músculos reciben tensión y cuánta carga pasa por la columna.",
+              "good_sign": "Pecho abierto, columna neutra en todo el recorrido."
+            }
+          },
+          "coaching": "Cadera atrás, barra rozando piernas, rodillas semiflexionadas."
+        },
+        "2": {
+          "phase_title": "3. Subida",
+          "angles": {},
+          "coaching": "Extiende cadera apretando glúteos."
+        }
+      },
+      "comparison_ids": [
+        "dl_conv_rdl"
+      ],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "peso_muerto_mancuernas": {
+      "live_id": "peso_muerto",
+      "live_available": true,
+      "watch_metrics": [
+        "Torso",
+        "Rodilla"
+      ],
+      "watch_intro": "Bisagra de cadera con espalda neutra; barra cerca del cuerpo.",
+      "anthropometry": "Brazos largos facilitan el convencional desde el suelo; brazos cortos suelen sentirse mejor con déficit o más flexión de rodilla al inicio.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "round",
+          "q": "¿Redondeas lumbar al iniciar desde el suelo?",
+          "if_yes": "avoid",
+          "msg": "Empieza con rumano o elevaciones desde bloques hasta dominar bisagra.",
+          "alt": "peso_muerto_rumano",
+          "alt_label": "Peso muerto rumano"
+        }
+      ],
+      "error_trees": {
+        "Separar mancuernas del cuerpo": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Redondear lumbar": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Setup",
+          "angles": {
+            "Espalda": {
+              "why": "La posición del torso determina qué músculos reciben tensión y cuánta carga pasa por la columna.",
+              "good_sign": "Pecho abierto, columna neutra en todo el recorrido."
+            }
+          },
+          "coaching": "Mancuernas a los lados, pies al ancho de caderas."
+        },
+        "1": {
+          "phase_title": "2. Subida",
+          "angles": {},
+          "coaching": "Extiende cadera y rodillas juntas."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Cadera atrás, mancuernas pegadas."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "peso_muerto_hex": {
+      "live_id": "peso_muerto",
+      "live_available": true,
+      "watch_metrics": [
+        "Torso",
+        "Rodilla"
+      ],
+      "watch_intro": "Bisagra de cadera con espalda neutra; barra cerca del cuerpo.",
+      "anthropometry": "Brazos largos facilitan el convencional desde el suelo; brazos cortos suelen sentirse mejor con déficit o más flexión de rodilla al inicio.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "round",
+          "q": "¿Redondeas lumbar al iniciar desde el suelo?",
+          "if_yes": "avoid",
+          "msg": "Empieza con rumano o elevaciones desde bloques hasta dominar bisagra.",
+          "alt": "peso_muerto_rumano",
+          "alt_label": "Peso muerto rumano"
+        }
+      ],
+      "error_trees": {
+        "Encorvarse": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Tirar con brazos": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Setup",
+          "angles": {
+            "Espalda": {
+              "why": "La posición del torso determina qué músculos reciben tensión y cuánta carga pasa por la columna.",
+              "good_sign": "Pecho abierto, columna neutra en todo el recorrido."
+            }
+          },
+          "coaching": "Dentro de la barra hex, agarre neutro, pecho arriba."
+        },
+        "1": {
+          "phase_title": "2. Subida",
+          "angles": {},
+          "coaching": "Empuja el suelo, extiende cadera."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Cadera atrás controlando."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "camilla_femoral": {
+      "live_id": null,
+      "live_available": false,
+      "watch_metrics": [],
+      "watch_intro": "Análisis en cámara disponible próximamente para este ejercicio. Mientras tanto usa la biblioteca 3D y el cuestionario.",
+      "anthropometry": "Fémur largo respecto al torso → más inclinación al bajar no siempre es error; lo crítico es mantener el peso sobre el mediopié y rodillas alineadas con los pies.",
+      "screening": [
+        {
+          "id": "heel",
+          "q": "¿Se te levantan los talones al bajar?",
+          "if_yes": "caution",
+          "msg": "Probable limitación de tobillo o estrategia de compensación.",
+          "alt": "hack_squat",
+          "alt_label": "Hack squat"
+        },
+        {
+          "id": "knee_pain",
+          "q": "¿Dolor agudo en rodilla al bajar?",
+          "if_yes": "avoid",
+          "msg": "No fuerces profundidad hasta valorar con un profesional.",
+          "alt": "camilla_femoral",
+          "alt_label": "Camilla femoral (menos carga en rodilla)"
+        },
+        {
+          "id": "long_femur",
+          "q": "¿Torso muy inclinado aunque rodillas sigan bien?",
+          "if_yes": "ok_variant",
+          "msg": "Con fémur largo respecto al torso, más inclinación puede ser geometría normal, no 'mala técnica'. Prioriza peso sobre mediopié.",
+          "alt": null
+        }
+      ],
+      "error_trees": {
+        "Elevar cadera": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Impulso con lumbar": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Rango parcial": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Inicio",
+          "angles": {
+            "Rodilla": {
+              "why": "Por debajo de ~90° el momento en rodilla aumenta; si el torso se va mucho al frente, la carga se aleja del centro y la lumbar trabaja de más.",
+              "good_sign": "Rodillas siguen la punta del pie sin colapsar hacia dentro."
+            }
+          },
+          "coaching": "Boca abajo, rodillas al borde, tobillos bajo el rodillo."
+        },
+        "1": {
+          "phase_title": "2. Contracción",
+          "angles": {
+            "Rodilla": {
+              "why": "Por debajo de ~90° el momento en rodilla aumenta; si el torso se va mucho al frente, la carga se aleja del centro y la lumbar trabaja de más.",
+              "good_sign": "Rodillas siguen la punta del pie sin colapsar hacia dentro."
+            }
+          },
+          "coaching": "Flexiona llevando talones al glúteo."
+        },
+        "2": {
+          "phase_title": "3. Extensión",
+          "angles": {},
+          "coaching": "Baja controlando 2–3 s."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "press_plano_mancuernas": {
+      "live_id": null,
+      "live_available": false,
+      "watch_metrics": [],
+      "watch_intro": "Análisis en cámara disponible próximamente para este ejercicio. Mientras tanto usa la biblioteca 3D y el cuestionario.",
+      "anthropometry": "Hombros estrechos o historial de molestias: mancuernas permiten ajustar el arco y el agarre mejor que barra fija.",
+      "screening": [
+        {
+          "id": "wrist",
+          "q": "¿Molestia en muñeca en plancha?",
+          "if_yes": "caution",
+          "msg": "Prueba manos en paralelas o flexiones inclinadas.",
+          "alt": "press_inclinado_mancuernas",
+          "alt_label": "Press inclinado (menos carga en muñeca)"
+        },
+        {
+          "id": "low_back",
+          "q": "¿Cadera cae o lumbar se arquea en la bajada?",
+          "if_yes": "caution",
+          "msg": "Falta control de core o fuerza relativa.",
+          "alt": "flexiones",
+          "alt_label": "Flexiones con manos elevadas"
+        }
+      ],
+      "error_trees": {
+        "Codos a 90° pegados": {
+          "causes": [
+            "Codo que viaja adelante o atrás",
+            "Peso excesivo",
+            "Hombro elevado compensando"
+          ],
+          "fixes": [
+            "Codos pegados al torso (según ejercicio)",
+            "Baja el peso 10–15%",
+            "2 s de pausa arriba sin impulso"
+          ],
+          "alt_exercise": null
+        },
+        "Rebotar en el pecho": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Perder retracción": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Arriba",
+          "angles": {},
+          "coaching": "Mancuernas sobre pecho, omóplatos atrás."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Baja hasta codos a 90° aprox."
+        },
+        "2": {
+          "phase_title": "3. Empuje",
+          "angles": {},
+          "coaching": "Empuja sin perder estabilidad escapular."
+        }
+      },
+      "comparison_ids": [
+        "press_flat_incline"
+      ],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "press_inclinado_mancuernas": {
+      "live_id": null,
+      "live_available": false,
+      "watch_metrics": [],
+      "watch_intro": "Análisis en cámara disponible próximamente para este ejercicio. Mientras tanto usa la biblioteca 3D y el cuestionario.",
+      "anthropometry": "Hombros estrechos o historial de molestias: mancuernas permiten ajustar el arco y el agarre mejor que barra fija.",
+      "screening": [
+        {
+          "id": "wrist",
+          "q": "¿Molestia en muñeca en plancha?",
+          "if_yes": "caution",
+          "msg": "Prueba manos en paralelas o flexiones inclinadas.",
+          "alt": "press_inclinado_mancuernas",
+          "alt_label": "Press inclinado (menos carga en muñeca)"
+        },
+        {
+          "id": "low_back",
+          "q": "¿Cadera cae o lumbar se arquea en la bajada?",
+          "if_yes": "caution",
+          "msg": "Falta control de core o fuerza relativa.",
+          "alt": "flexiones",
+          "alt_label": "Flexiones con manos elevadas"
+        }
+      ],
+      "error_trees": {
+        "Ángulo excesivo del banco": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Abrir demasiado codos": {
+          "causes": [
+            "Codo que viaja adelante o atrás",
+            "Peso excesivo",
+            "Hombro elevado compensando"
+          ],
+          "fixes": [
+            "Codos pegados al torso (según ejercicio)",
+            "Baja el peso 10–15%",
+            "2 s de pausa arriba sin impulso"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Arriba",
+          "angles": {},
+          "coaching": "Banco inclinado, mancuernas sobre pecho alto."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Baja 2–3 s al pecho alto."
+        },
+        "2": {
+          "phase_title": "3. Empuje",
+          "angles": {},
+          "coaching": "Empuja en línea con antebrazos."
+        }
+      },
+      "comparison_ids": [
+        "press_flat_incline"
+      ],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "press_plano_barra": {
+      "live_id": "press_smith",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo"
+      ],
+      "watch_intro": "Recorrido controlado; codos no demasiado abiertos en la bajada.",
+      "anthropometry": "Hombros estrechos o historial de molestias: mancuernas permiten ajustar el arco y el agarre mejor que barra fija.",
+      "screening": [
+        {
+          "id": "wrist",
+          "q": "¿Molestia en muñeca en plancha?",
+          "if_yes": "caution",
+          "msg": "Prueba manos en paralelas o flexiones inclinadas.",
+          "alt": "press_inclinado_mancuernas",
+          "alt_label": "Press inclinado (menos carga en muñeca)"
+        },
+        {
+          "id": "low_back",
+          "q": "¿Cadera cae o lumbar se arquea en la bajada?",
+          "if_yes": "caution",
+          "msg": "Falta control de core o fuerza relativa.",
+          "alt": "flexiones",
+          "alt_label": "Flexiones con manos elevadas"
+        }
+      ],
+      "error_trees": {
+        "Rebotar la barra": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Codos abiertos a 90°": {
+          "causes": [
+            "Codo que viaja adelante o atrás",
+            "Peso excesivo",
+            "Hombro elevado compensando"
+          ],
+          "fixes": [
+            "Codos pegados al torso (según ejercicio)",
+            "Baja el peso 10–15%",
+            "2 s de pausa arriba sin impulso"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Arriba",
+          "angles": {},
+          "coaching": "Barra extendida sobre pecho."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Lleva la barra al pecho medio."
+        },
+        "2": {
+          "phase_title": "3. Empuje",
+          "angles": {},
+          "coaching": "Empuja sin perder posición escapular."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "press_inclinado_barra": {
+      "live_id": "press_smith",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo"
+      ],
+      "watch_intro": "Recorrido controlado; codos no demasiado abiertos en la bajada.",
+      "anthropometry": "Hombros estrechos o historial de molestias: mancuernas permiten ajustar el arco y el agarre mejor que barra fija.",
+      "screening": [
+        {
+          "id": "wrist",
+          "q": "¿Molestia en muñeca en plancha?",
+          "if_yes": "caution",
+          "msg": "Prueba manos en paralelas o flexiones inclinadas.",
+          "alt": "press_inclinado_mancuernas",
+          "alt_label": "Press inclinado (menos carga en muñeca)"
+        },
+        {
+          "id": "low_back",
+          "q": "¿Cadera cae o lumbar se arquea en la bajada?",
+          "if_yes": "caution",
+          "msg": "Falta control de core o fuerza relativa.",
+          "alt": "flexiones",
+          "alt_label": "Flexiones con manos elevadas"
+        }
+      ],
+      "error_trees": {
+        "Rebote en pecho": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Inclinación excesiva": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Arriba",
+          "angles": {},
+          "coaching": "Barra sobre pecho alto, banco 30–45°."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Barra al pecho alto sin rebote."
+        },
+        "2": {
+          "phase_title": "3. Empuje",
+          "angles": {},
+          "coaching": "Extiende codos sin perder retracción."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "flexiones": {
+      "live_id": "flexion",
+      "live_available": true,
+      "watch_metrics": [
+        "Cuerpo",
+        "Codo"
+      ],
+      "watch_intro": "Vigilamos línea corporal (cadera alineada) y flexión de codos en la bajada.",
+      "anthropometry": "Hombros estrechos o historial de molestias: mancuernas permiten ajustar el arco y el agarre mejor que barra fija.",
+      "screening": [
+        {
+          "id": "wrist",
+          "q": "¿Molestia en muñeca en plancha?",
+          "if_yes": "caution",
+          "msg": "Prueba manos en paralelas o flexiones inclinadas.",
+          "alt": "press_inclinado_mancuernas",
+          "alt_label": "Press inclinado (menos carga en muñeca)"
+        },
+        {
+          "id": "low_back",
+          "q": "¿Cadera cae o lumbar se arquea en la bajada?",
+          "if_yes": "caution",
+          "msg": "Falta control de core o fuerza relativa.",
+          "alt": "flexiones",
+          "alt_label": "Flexiones con manos elevadas"
+        }
+      ],
+      "error_trees": {
+        "Cadera caída": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Codos muy abiertos": {
+          "causes": [
+            "Codo que viaja adelante o atrás",
+            "Peso excesivo",
+            "Hombro elevado compensando"
+          ],
+          "fixes": [
+            "Codos pegados al torso (según ejercicio)",
+            "Baja el peso 10–15%",
+            "2 s de pausa arriba sin impulso"
+          ],
+          "alt_exercise": null
+        },
+        "Rango parcial": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Plancha",
+          "angles": {},
+          "coaching": "Manos bajo hombros, cuerpo recto."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Codos a 45°, pecho al suelo."
+        },
+        "2": {
+          "phase_title": "3. Empuje",
+          "angles": {},
+          "coaching": "Empuja manteniendo línea corporal."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "cadera",
+          "hypothesis": "Core insuficiente para mantener línea.",
+          "next": "Flexiones inclinadas; plancha con pausa."
+        },
+        {
+          "if_issue_contains": "codo",
+          "hypothesis": "Codos muy abiertos o recorrido corto.",
+          "next": "Codos a 45°; pausa 1 s abajo."
+        }
+      ]
+    },
+    "cruce_polea": {
+      "live_id": null,
+      "live_available": false,
+      "watch_metrics": [],
+      "watch_intro": "Análisis en cámara disponible próximamente para este ejercicio. Mientras tanto usa la biblioteca 3D y el cuestionario.",
+      "anthropometry": "Hombros estrechos o historial de molestias: mancuernas permiten ajustar el arco y el agarre mejor que barra fija.",
+      "screening": [
+        {
+          "id": "wrist",
+          "q": "¿Molestia en muñeca en plancha?",
+          "if_yes": "caution",
+          "msg": "Prueba manos en paralelas o flexiones inclinadas.",
+          "alt": "press_inclinado_mancuernas",
+          "alt_label": "Press inclinado (menos carga en muñeca)"
+        },
+        {
+          "id": "low_back",
+          "q": "¿Cadera cae o lumbar se arquea en la bajada?",
+          "if_yes": "caution",
+          "msg": "Falta control de core o fuerza relativa.",
+          "alt": "flexiones",
+          "alt_label": "Flexiones con manos elevadas"
+        }
+      ],
+      "error_trees": {
+        "Bloquear codos": {
+          "causes": [
+            "Codo que viaja adelante o atrás",
+            "Peso excesivo",
+            "Hombro elevado compensando"
+          ],
+          "fixes": [
+            "Codos pegados al torso (según ejercicio)",
+            "Baja el peso 10–15%",
+            "2 s de pausa arriba sin impulso"
+          ],
+          "alt_exercise": null
+        },
+        "Usar demasiado peso": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Apertura",
+          "angles": {},
+          "coaching": "Brazos abiertos, ligera inclinación adelante."
+        },
+        "1": {
+          "phase_title": "2. Cruce",
+          "angles": {},
+          "coaching": "Junta manos al frente apretando pecho."
+        },
+        "2": {
+          "phase_title": "3. Vuelta",
+          "angles": {},
+          "coaching": "Extiende controlando el peso."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "empuje_frontal": {
+      "live_id": null,
+      "live_available": false,
+      "watch_metrics": [],
+      "watch_intro": "Análisis en cámara disponible próximamente para este ejercicio. Mientras tanto usa la biblioteca 3D y el cuestionario.",
+      "anthropometry": "Hiperlaxitud: evita bloquear codos arriba y prioriza control escapular.",
+      "screening": [
+        {
+          "id": "shoulder",
+          "q": "¿Hombros suben hacia las orejas al tirar?",
+          "if_yes": "caution",
+          "msg": "Compensación de trapecio; baja peso y piensa 'codos al bolsillo'.",
+          "alt": "jalon",
+          "alt_label": "Jalón con agarre neutro"
+        }
+      ],
+      "error_trees": {
+        "Arquear espalda": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Usar impulso": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Abajo",
+          "angles": {},
+          "coaching": "Mancuernas frente a muslos, codos semiflexionados."
+        },
+        "1": {
+          "phase_title": "2. Subida",
+          "angles": {
+            "Hombro": {
+              "why": "En Empuje frontal, este punto es la referencia que separa técnica controlada de compensación.",
+              "good_sign": "Flexión frontal"
+            }
+          },
+          "coaching": "Eleva al frente hasta altura de hombros."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Baja controlando 2 s."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "remo_barra": {
+      "live_id": "remo_maquina",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo",
+        "Torso"
+      ],
+      "watch_intro": "Codos hacia atrás sin encoger hombros ni arquear lumbar.",
+      "anthropometry": "Torso corto: en remo de pie cuida no hiperextender lumbar al final del tirón.",
+      "screening": [
+        {
+          "id": "shoulder",
+          "q": "¿Hombros suben hacia las orejas al tirar?",
+          "if_yes": "caution",
+          "msg": "Compensación de trapecio; baja peso y piensa 'codos al bolsillo'.",
+          "alt": "jalon",
+          "alt_label": "Jalón con agarre neutro"
+        }
+      ],
+      "error_trees": {
+        "Redondear espalda": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Tirar con bíceps solo": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Encoger hombros": {
+          "causes": [
+            "Escápulas inestables",
+            "Rango forzado sin movilidad",
+            "Agarre o ángulo inadecuado"
+          ],
+          "fixes": [
+            "Retrae escápulas antes del movimiento",
+            "Reduce rango 10–20%",
+            "Prueba agarre neutro o más cerrado"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Posición",
+          "angles": {
+            "Espalda": {
+              "why": "La posición del torso determina qué músculos reciben tensión y cuánta carga pasa por la columna.",
+              "good_sign": "Pecho abierto, columna neutra en todo el recorrido."
+            }
+          },
+          "coaching": "Bisagra, agarre prono, brazos extendidos."
+        },
+        "1": {
+          "phase_title": "2. Tirón",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Lleva codos atrás, barra al ombligo."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Extiende controlando."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "remo_t": {
+      "live_id": "remo_maquina",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo",
+        "Torso"
+      ],
+      "watch_intro": "Codos hacia atrás sin encoger hombros ni arquear lumbar.",
+      "anthropometry": "Torso corto: en remo de pie cuida no hiperextender lumbar al final del tirón.",
+      "screening": [
+        {
+          "id": "shoulder",
+          "q": "¿Hombros suben hacia las orejas al tirar?",
+          "if_yes": "caution",
+          "msg": "Compensación de trapecio; baja peso y piensa 'codos al bolsillo'.",
+          "alt": "jalon",
+          "alt_label": "Jalón con agarre neutro"
+        }
+      ],
+      "error_trees": {
+        "Redondear lumbar": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Tirar con brazos solos": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Estiramiento",
+          "angles": {},
+          "coaching": "Agarre en T, brazos extendidos, torso inclinado."
+        },
+        "1": {
+          "phase_title": "2. Tirón",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Tira al pecho bajo, aprieta omóplatos."
+        },
+        "2": {
+          "phase_title": "3. Vuelta",
+          "angles": {},
+          "coaching": "Extiende lento."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "jalon": {
+      "live_id": "jalon",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo",
+        "Torso"
+      ],
+      "watch_intro": "Tirón con codos hacia el torso, sin balanceo lumbar excesivo.",
+      "anthropometry": "Torso corto: en remo de pie cuida no hiperextender lumbar al final del tirón.",
+      "screening": [
+        {
+          "id": "shoulder",
+          "q": "¿Hombros suben hacia las orejas al tirar?",
+          "if_yes": "caution",
+          "msg": "Compensación de trapecio; baja peso y piensa 'codos al bolsillo'.",
+          "alt": "jalon",
+          "alt_label": "Jalón con agarre neutro"
+        }
+      ],
+      "error_trees": {
+        "Tirar detrás del cuello": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Tirar con antebrazos": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Encoger hombros": {
+          "causes": [
+            "Escápulas inestables",
+            "Rango forzado sin movilidad",
+            "Agarre o ángulo inadecuado"
+          ],
+          "fixes": [
+            "Retrae escápulas antes del movimiento",
+            "Reduce rango 10–20%",
+            "Prueba agarre neutro o más cerrado"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Inicio",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Sentado, muslos fijos, brazos extendidos."
+        },
+        "1": {
+          "phase_title": "2. Tirón",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Codos abajo y atrás."
+        },
+        "2": {
+          "phase_title": "3. Contracción",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Barra al pecho alto, pausa breve."
+        },
+        "3": {
+          "phase_title": "4. Subida",
+          "angles": {},
+          "coaching": "Extiende controlando."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "remo_unilateral": {
+      "live_id": "remo_maquina",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo",
+        "Torso"
+      ],
+      "watch_intro": "Codos hacia atrás sin encoger hombros ni arquear lumbar.",
+      "anthropometry": "Torso corto: en remo de pie cuida no hiperextender lumbar al final del tirón.",
+      "screening": [
+        {
+          "id": "shoulder",
+          "q": "¿Hombros suben hacia las orejas al tirar?",
+          "if_yes": "caution",
+          "msg": "Compensación de trapecio; baja peso y piensa 'codos al bolsillo'.",
+          "alt": "jalon",
+          "alt_label": "Jalón con agarre neutro"
+        }
+      ],
+      "error_trees": {
+        "Rotar torso": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Encoger hombro": {
+          "causes": [
+            "Escápulas inestables",
+            "Rango forzado sin movilidad",
+            "Agarre o ángulo inadecuado"
+          ],
+          "fixes": [
+            "Retrae escápulas antes del movimiento",
+            "Reduce rango 10–20%",
+            "Prueba agarre neutro o más cerrado"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Estiramiento",
+          "angles": {},
+          "coaching": "Mano y rodilla en banco, brazo extendido."
+        },
+        "1": {
+          "phase_title": "2. Tirón",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Lleva codo al techo, aprieta omóplato."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Extiende controlando."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "curl_mancuernas": {
+      "live_id": "curl",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo"
+      ],
+      "watch_intro": "El codo debe quedarse estable; solo se mueve el antebrazo.",
+      "anthropometry": "Antebrazo dominante: el martillo suele sentirse más natural que supino estricto.",
+      "screening": [
+        {
+          "id": "elbow",
+          "q": "¿Dolor en cara interna del codo?",
+          "if_yes": "caution",
+          "msg": "Evita impulso y agarre martillo puede aliviar.",
+          "alt": "curl_martillo",
+          "alt_label": "Curl martillo"
+        }
+      ],
+      "error_trees": {
+        "Mover codos adelante": {
+          "causes": [
+            "Codo que viaja adelante o atrás",
+            "Peso excesivo",
+            "Hombro elevado compensando"
+          ],
+          "fixes": [
+            "Codos pegados al torso (según ejercicio)",
+            "Baja el peso 10–15%",
+            "2 s de pausa arriba sin impulso"
+          ],
+          "alt_exercise": null
+        },
+        "Rango incompleto": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Abajo",
+          "angles": {},
+          "coaching": "Brazos extendidos, codos al torso."
+        },
+        "1": {
+          "phase_title": "2. Subida",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Flexiona sin mover codos."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Extiende controlando."
+        }
+      },
+      "comparison_ids": [
+        "curl_hammer"
+      ],
+      "session_patterns": [
+        {
+          "if_issue_contains": "impulso",
+          "hypothesis": "Peso alto o codo que viaja.",
+          "next": "Baja 15%; apoya espalda en pared."
+        }
+      ]
+    },
+    "curl_martillo": {
+      "live_id": "curl",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo"
+      ],
+      "watch_intro": "El codo debe quedarse estable; solo se mueve el antebrazo.",
+      "anthropometry": "Antebrazo dominante: el martillo suele sentirse más natural que supino estricto.",
+      "screening": [
+        {
+          "id": "elbow",
+          "q": "¿Dolor en cara interna del codo?",
+          "if_yes": "caution",
+          "msg": "Evita impulso y agarre martillo puede aliviar.",
+          "alt": "curl_martillo",
+          "alt_label": "Curl martillo"
+        }
+      ],
+      "error_trees": {
+        "Balancear torso": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Agarre incorrecto": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Abajo",
+          "angles": {},
+          "coaching": "Mancuernas a los lados, agarre neutro."
+        },
+        "1": {
+          "phase_title": "2. Subida",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Flexiona sin supinar."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Control excéntrico."
+        }
+      },
+      "comparison_ids": [
+        "curl_hammer"
+      ],
+      "session_patterns": [
+        {
+          "if_issue_contains": "impulso",
+          "hypothesis": "Peso alto o codo que viaja.",
+          "next": "Baja 15%; apoya espalda en pared."
+        }
+      ]
+    },
+    "curl_barra_z": {
+      "live_id": "curl",
+      "live_available": true,
+      "watch_metrics": [
+        "Codo"
+      ],
+      "watch_intro": "El codo debe quedarse estable; solo se mueve el antebrazo.",
+      "anthropometry": "Antebrazo dominante: el martillo suele sentirse más natural que supino estricto.",
+      "screening": [
+        {
+          "id": "elbow",
+          "q": "¿Dolor en cara interna del codo?",
+          "if_yes": "caution",
+          "msg": "Evita impulso y agarre martillo puede aliviar.",
+          "alt": "curl_martillo",
+          "alt_label": "Curl martillo"
+        }
+      ],
+      "error_trees": {
+        "Balanceo": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Codos que avanzan": {
+          "causes": [
+            "Codo que viaja adelante o atrás",
+            "Peso excesivo",
+            "Hombro elevado compensando"
+          ],
+          "fixes": [
+            "Codos pegados al torso (según ejercicio)",
+            "Baja el peso 10–15%",
+            "2 s de pausa arriba sin impulso"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Abajo",
+          "angles": {},
+          "coaching": "Brazos extendidos, barra Z al frente."
+        },
+        "1": {
+          "phase_title": "2. Subida",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Flexiona manteniendo codos fijos."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Baja lento sin soltar tensión."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "impulso",
+          "hypothesis": "Peso alto o codo que viaja.",
+          "next": "Baja 15%; apoya espalda en pared."
+        }
+      ]
+    },
+    "press_militar": {
+      "live_id": null,
+      "live_available": false,
+      "watch_metrics": [],
+      "watch_intro": "Análisis en cámara disponible próximamente para este ejercicio. Mientras tanto usa la biblioteca 3D y el cuestionario.",
+      "anthropometry": "Hiperlaxitud: evita bloquear codos arriba y prioriza control escapular.",
+      "screening": [
+        {
+          "id": "shoulder",
+          "q": "¿Hombros suben hacia las orejas al tirar?",
+          "if_yes": "caution",
+          "msg": "Compensación de trapecio; baja peso y piensa 'codos al bolsillo'.",
+          "alt": "jalon",
+          "alt_label": "Jalón con agarre neutro"
+        }
+      ],
+      "error_trees": {
+        "Arqueo lumbar excesivo": {
+          "causes": [
+            "Pérdida de presión abdominal",
+            "Carga alejada del centro de masa",
+            "Fatiga o peso excesivo"
+          ],
+          "fixes": [
+            "Bracing antes de cada rep",
+            "Reduce carga hasta mantener neutro",
+            "Pausa 1 s en el punto más difícil"
+          ],
+          "alt_exercise": null
+        },
+        "Abrir demasiado codos": {
+          "causes": [
+            "Codo que viaja adelante o atrás",
+            "Peso excesivo",
+            "Hombro elevado compensando"
+          ],
+          "fixes": [
+            "Codos pegados al torso (según ejercicio)",
+            "Baja el peso 10–15%",
+            "2 s de pausa arriba sin impulso"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Arriba",
+          "angles": {},
+          "coaching": "Barra sobre cabeza, brazos extendidos."
+        },
+        "1": {
+          "phase_title": "2. Bajada",
+          "angles": {
+            "Codo": {
+              "why": "El ángulo del codo define si el bíceps/pecho trabaja o si el hombro compensa con impulso.",
+              "good_sign": "Codos estables; solo se mueve lo que debe moverse."
+            }
+          },
+          "coaching": "Baja a la clavícula/controlado."
+        },
+        "2": {
+          "phase_title": "3. Empuje",
+          "angles": {},
+          "coaching": "Empuja vertical sin rebote."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    },
+    "vuelos_laterales": {
+      "live_id": null,
+      "live_available": false,
+      "watch_metrics": [],
+      "watch_intro": "Análisis en cámara disponible próximamente para este ejercicio. Mientras tanto usa la biblioteca 3D y el cuestionario.",
+      "anthropometry": "Hiperlaxitud: evita bloquear codos arriba y prioriza control escapular.",
+      "screening": [
+        {
+          "id": "shoulder",
+          "q": "¿Hombros suben hacia las orejas al tirar?",
+          "if_yes": "caution",
+          "msg": "Compensación de trapecio; baja peso y piensa 'codos al bolsillo'.",
+          "alt": "jalon",
+          "alt_label": "Jalón con agarre neutro"
+        }
+      ],
+      "error_trees": {
+        "Demasiado peso": {
+          "causes": [
+            "Técnica no automatizada aún",
+            "Fatiga acumulada",
+            "Carga por encima de lo que puedes controlar"
+          ],
+          "fixes": [
+            "Repite la fase lenta en la biblioteca 3D",
+            "Baja series o peso",
+            "Filma una serie y compara con el modelo"
+          ],
+          "alt_exercise": null
+        },
+        "Elevar por encima de hombros con balanceo": {
+          "causes": [
+            "Escápulas inestables",
+            "Rango forzado sin movilidad",
+            "Agarre o ángulo inadecuado"
+          ],
+          "fixes": [
+            "Retrae escápulas antes del movimiento",
+            "Reduce rango 10–20%",
+            "Prueba agarre neutro o más cerrado"
+          ],
+          "alt_exercise": null
+        }
+      },
+      "step_insights": {
+        "0": {
+          "phase_title": "1. Abajo",
+          "angles": {},
+          "coaching": "Mancuernas a los lados del cuerpo."
+        },
+        "1": {
+          "phase_title": "2. Subida",
+          "angles": {
+            "Hombro": {
+              "why": "En Vuelos laterales, este punto es la referencia que separa técnica controlada de compensación.",
+              "good_sign": "Abducción"
+            }
+          },
+          "coaching": "Eleva lateralmente hasta hombros."
+        },
+        "2": {
+          "phase_title": "3. Bajada",
+          "angles": {},
+          "coaching": "Baja controlando 2–3 s."
+        }
+      },
+      "comparison_ids": [],
+      "session_patterns": [
+        {
+          "if_issue_contains": "",
+          "hypothesis": "Revisa la fase marcada en rojo en la biblioteca 3D.",
+          "next": "Repite 3 series lentas enfocando la primera corrección."
+        }
+      ]
+    }
+  }
+}
